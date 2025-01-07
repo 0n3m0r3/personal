@@ -1,0 +1,10 @@
+{
+  "languageSelector": {
+    "french": "French",
+    "english": "English",
+    "german": "German"
+  },
+  "hero": {
+    "welcome": "My name is Louka Altdorf Reynes !"
+  }
+}
