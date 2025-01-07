@@ -4,7 +4,7 @@ import Select from "./Select";
 
 export default function Header() {
   return (
-    <header className="bg-white flex p-4 justify-between">
+    <header className="bg-white flex p-4 justify-between font-sans">
       <div className="flex space-x-4">
         <div>
           <Image src={MobileLogo} alt="Mobile Logo" />

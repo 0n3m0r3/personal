@@ -38,7 +38,7 @@ export default function Select() {
     <Listbox value={selected} onChange={setSelected}>
       {({ open }: { open: boolean }) => (
         <>
-          <div className="relative z-40">
+          <div className="relative z-40 font-sans">
             <Listbox.Button className="flex w-full cursor-default rounded-md bg-primary-dark py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:cursor-pointer">
               <span className="flex items-center border-white border-solid border rounded-full">
                 <img
