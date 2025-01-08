@@ -9,7 +9,7 @@ export default function Presentation() {
         {t("description")}
       </h3>
       <div className="flex justify-center">
-        <a href="./public/resume_en.pdf" download>
+        <a href="/resume_en.pdf" download>
           <Button message="presentation.button" />
         </a>
       </div>

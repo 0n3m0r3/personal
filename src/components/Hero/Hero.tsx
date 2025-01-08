@@ -257,12 +257,12 @@ export default function Hero() {
               {t("welcome")}
             </h1>
             <div className="mt-6">
-              <a href="public/resume_en.pdf" download>
+              <a href="/resume_en.pdf" download>
                 <Button message="hero.button" />
               </a>
             </div>
             <div className="mt-8 flex flex-row-reverse w-full h-fit pr-14">
-              <a href="./public/resume_en.pdf" download>
+              <a href="/resume_en.pdf" download>
                 <svg
                   width="100"
                   height="100"
