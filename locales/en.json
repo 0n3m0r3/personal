@@ -5,6 +5,12 @@
     "german": "German"
   },
   "hero": {
-    "welcome": "My name is Louka Altdorf Reynes !"
+    "hello": "Hello !",
+    "welcome": "My name is Louka Altdorf Reynes !",
+    "button": "Download my resume"
+  },
+  "presentation": {
+    "description": "As a computer development enthusiast, I allow myself to present you my skills. I will be happy to tell you more during an interview. Do not hesitate to contact me to arrange a meeting.",
+    "button": "Download my resume"
   }
 }

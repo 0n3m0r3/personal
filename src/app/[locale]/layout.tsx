@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Mulish } from "next/font/google";
+import StoreProvider from "../StoreProvider";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -34,10 +35,13 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={mulish.variable}>
-        {/* Wrap the app in NextIntlClientProvider */}
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {/* Wrap the app in Redux Provider */}
+        <StoreProvider>
+          {/* Wrap the app in NextIntlClientProvider */}
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </StoreProvider>
       </body>
     </html>
   );

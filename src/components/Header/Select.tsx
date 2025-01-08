@@ -3,13 +3,15 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
 
 import { classNames } from "../../utils/classNames";
 
 import FrenchFlag from "../../../public/assests/country/fr/france.png";
 import EnglishFlag from "../../../public/assests/country/en/united-kingdom.png";
 import GermanFlag from "../../../public/assests/country/de/germany.png";
+import { setLanguage } from "@/lib/features/languageSlice";
 
 interface Language {
   id: string;
@@ -29,13 +31,36 @@ const languages: Language[] = [
 export default function Select() {
   const t = useTranslations("languageSelector");
   const pathname = usePathname();
-  const locale = pathname.split("/")[1];
+  const router = useRouter();
+
+  // Redux
+  const dispatch = useDispatch();
+  const reduxLang = useSelector((state: any) => state.language.currentLanguage);
+
+  const localeFromPath = pathname.split("/")[1];
+
+  // Local state for the selected language
   const [selected, setSelected] = useState<Language>(
-    languages.find((language) => language.id === locale) || languages[0]
+    languages.find((l) => l.id === localeFromPath) || languages[0]
   );
 
+  // Handler for when user selects a new language
+  const handleLanguageChange = (newLang: Language) => {
+    setSelected(newLang);
+    dispatch(setLanguage(newLang.id)); // update Redux store
+
+    // Replace the current first segment with the new locale and navigate
+    // e.g. "/en/some-page" -> "/fr/some-page"
+    const segments = pathname.split("/");
+    segments[1] = newLang.id;
+    const newPath = segments.join("/");
+
+    // Navigate to the new locale path
+    router.push(newPath);
+  };
+
   return (
-    <Listbox value={selected} onChange={setSelected}>
+    <Listbox value={selected} onChange={handleLanguageChange}>
       {({ open }: { open: boolean }) => (
         <>
           <div className="relative z-40 font-sans">
@@ -47,7 +72,7 @@ export default function Select() {
                   className="h-6 w-6 rounded-full"
                 />
               </span>
-              <span className="truncate hidden md:block px-2 text-white">
+              <span className="truncate hidden md:block px-2 text-white font-sans">
                 {t(selected.name)}
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -64,7 +89,7 @@ export default function Select() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+              <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 font-sans text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                 {languages.map((language) => (
                   <Listbox.Option
                     key={language.id}

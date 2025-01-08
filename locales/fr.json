@@ -5,6 +5,12 @@
     "german": "Allemand"
   },
   "hero": {
-    "welcome": "Je m'appelle Louka Altdorf Reynes !"
+    "hello": "Bonjour !",
+    "welcome": "Je m'appelle Louka Altdorf Reynes !",
+    "button": "Télécharger mon CV"
+  },
+  "presentation": {
+    "description": "En tant que passionné de développement informatique, je me permets de vous présenter mes compétences. Je serai ravi de vous en dire plus lors d’un entretien. N'hésitez pas à me contacter pour convenir d'un rendez-vous.",
+    "button": "Télécharger mon CV"
   }
 }
