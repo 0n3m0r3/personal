@@ -3,7 +3,7 @@ steps:
     command: cd {{repo_dir}} && npm install 
   - type: create-env
   - type: bash
-    command: npm build && npm start
+    command: npm run build && npm run start
   - type: instruction
     text: Open the browser and navigate to http://localhost:3000
   - type: wait
