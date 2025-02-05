@@ -1,6 +1,6 @@
 steps:
   - type: bash
-    command: cd {{repo_dir}} && npm install
+    command: cd {{repo_dir}} && npm install && npm build && npm start
   - type: create-env
   - type: bash
     command: npm install
