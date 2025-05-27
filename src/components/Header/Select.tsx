@@ -64,15 +64,15 @@ export default function Select() {
       {({ open }: { open: boolean }) => (
         <>
           <div className="relative z-40 font-sans">
-            <Listbox.Button className="flex w-full cursor-default rounded-md bg-primary-dark py-1.5 md:py-4 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:cursor-pointer px-8">
-              <span className="flex items-center border-white border-solid border rounded-full">
+            <Listbox.Button className="flex items-center w-full md:w-40 cursor-default rounded-md bg-primary-dark py-1.5 md:py-4 pl-3 pr-10 md:pr-8 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 hover:cursor-pointer px-8 md:pl-3">
+              <span className="flex items-center border-white border-solid border rounded-full flex-shrink-0">
                 <img
                   src={selected.flag.src}
                   alt={t(selected.name)}
                   className="h-6 w-6 rounded-full"
                 />
               </span>
-              <span className="truncate hidden md:block px-2 text-white font-sans">
+              <span className="truncate hidden md:block px-2 text-white font-sans md:overflow-hidden">
                 {t(selected.name)}
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -89,7 +89,7 @@ export default function Select() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 font-sans text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+              <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full md:w-40 overflow-auto rounded-md bg-white py-1 font-sans text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                 {languages.map((language) => (
                   <Listbox.Option
                     key={language.id}
@@ -108,8 +108,8 @@ export default function Select() {
                       selected: boolean;
                       active: boolean;
                     }) => (
-                      <div className="flex justify-center items-center">
-                        <span className="flex items-center border-white border-solid border rounded-full">
+                      <div className="flex items-center">
+                        <span className="flex items-center border-white border-solid border rounded-full flex-shrink-0">
                           <img
                             src={language.flag.src}
                             alt={t(selected ? language.name : "")}
@@ -119,7 +119,7 @@ export default function Select() {
                         <span
                           className={classNames(
                             selected ? "font-semibold" : "font-normal",
-                            "hidden md:block truncate ml-2"
+                            "hidden md:block truncate ml-2 md:overflow-hidden"
                           )}
                         >
                           {t(language.name)}
