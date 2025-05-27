@@ -4,12 +4,12 @@ import Button from "../Ui/Button";
 export default function Presentation() {
   const t = useTranslations("presentation");
   return (
-    <div className="md:my-16 md:max-w-screen-md md:mx-auto">
+    <div className="my-8 md:my-16 md:max-w-screen-md md:mx-auto">
       <h3 className="text-base font-medium md:text-3xl text-[#2A2C32] font-sans text-center m-4">
         {t("description")}
       </h3>
       <div className="flex justify-center">
-        <a href="/resume_en.pdf" download>
+        <a href="/Louka Altdorf Reynes.pdf" download>
           <Button message="presentation.button" />
         </a>
       </div>
