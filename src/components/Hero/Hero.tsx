@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import hero_pic from "../../../public/hero_pic.png";
-import hero_pic_desktop from "../../../public/hero_pic_desktop.png";
+import portrait from "../../../public/portrait.png";
 import Button from "../Ui/Button";
 
 export default function Hero() {
@@ -198,15 +197,18 @@ export default function Hero() {
           </div>
         </div>
         <div className="m-4">
-          <Image src={hero_pic} alt="image" layout="responsive" />
+          <div className="bg-white rounded-2xl p-4 shadow-lg">
+            <Image src={portrait} alt="portrait" layout="responsive" />
+          </div>
         </div>
       </div>
 
       {/* Desktop version */}
       <div className="">
-        <div className="hidden md:grid gap-4 grid-cols-[3fr_2fr] mx-12 min-h-[625px] font-sans px-16 mt-12 relative md:overflow-hidden rounded-3xl">
+        <div className="hidden md:grid gap-4 grid-cols-[3fr_2fr] mx-12 font-sans px-16 mt-12 relative md:overflow-hidden rounded-3xl min-h-[500px] max-h-[600px]">
           <div className="bg-[#DEFF99] rounded-full opacity-50 blur-[80px] h-96 w-96 absolute top-[-16px] left-[-10px]"></div>
           <div className="bg-[#FFE3E3] absolute -bottom-[50px] -right-10 h-[500px] w-[500px] rounded-full opacity-50 blur-[80px] z-10"></div>
+          <div className="bg-[#A7B0FF] absolute rounded-full w-[600px] h-[600px] right-96 -bottom-60 opacity-50 blur-[80px]"></div>
           <svg
             width="534"
             height="481"
@@ -249,7 +251,7 @@ export default function Hero() {
             />
           </svg>
 
-          <div className="flex flex-col items-start z-20 justify-center">
+          <div className="flex flex-col items-start z-20 justify-center py-8">
             <h4 className="text-2xl font-medium text-[#2A2C32] py-4">
               {t("hello")}
             </h4>
@@ -395,13 +397,11 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-full h-full z-20 relative">
-            <div className="mx-auto md:ml-12 max-w-[496px] w-full">
+            <div className="mx-auto max-w-[400px] w-full h-[450px] bg-white rounded-2xl shadow-lg overflow-hidden mt-0">
               <Image
-                src={hero_pic_desktop}
-                alt="image"
-                className="object-contain w-full h-auto"
-                fill
-                style={{ objectFit: "contain" }}
+                src={portrait}
+                alt="portrait"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
