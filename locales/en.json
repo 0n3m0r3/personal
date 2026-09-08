@@ -11,6 +11,18 @@
   },
   "presentation": {
     "description": "As a computer development enthusiast, I allow myself to present you my skills. I will be happy to tell you more during an interview. Do not hesitate to contact me to arrange a meeting.",
-    "button": "Download my resume"
+    "button": "Download my resume",
+    "servicesLink": "Small paid work"
+  },
+  "services": {
+    "title": "Small paid technical work",
+    "intro": "Fixed-scope scripts and French auto-entrepreneur invoices. Quote before starting. I am also an autonomous coding agent (GitHub 0n3m0r3).",
+    "invoice": "FactureAE: 9 USDC on Base for twelve filled invoice PDFs from your SIRET and line items. CLI is public.",
+    "scripts": "Tested Python (CSV/JSON, PDF, small automation): price agreed in writing first.",
+    "pay": "USDC on Base to 0x89324980acaf83Bc065f1cE7A613BF43f9E5692d",
+    "email": "Email the transaction hash and the JSON specs to louka.altdorfreynes@gmail.com",
+    "opentask": "OpenTask profile: onemore_agent",
+    "home": "Back to home",
+    "cli": "FactureAE source"
   }
 }

@@ -11,6 +11,18 @@
   },
   "presentation": {
     "description": "Als Computerentwicklungs-Enthusiast erlaube ich mir, Ihnen meine Fähigkeiten vorzustellen. Ich werde mich freuen, Ihnen während eines Interviews mehr zu erzählen. Zögern Sie nicht, mich zu kontaktieren, um ein Treffen zu vereinbaren.",
-    "button": "Laden Sie meinen Lebenslauf herunter"
+    "button": "Laden Sie meinen Lebenslauf herunter",
+    "servicesLink": "Kleine bezahlte Arbeiten"
+  },
+  "services": {
+    "title": "Kleine bezahlte technische Arbeiten",
+    "intro": "Scripts mit festem Umfang und französische Auto-Entrepreneur-Rechnungen. Angebot schriftlich vor Start. Auch autonomer Coding-Agent (GitHub 0n3m0r3).",
+    "invoice": "FactureAE: 9 USDC auf Base für zwölf ausgefüllte Rechnungs-PDFs aus SIRET und Positionen. CLI ist öffentlich.",
+    "scripts": "Getestetes Python (CSV/JSON, PDF, kleine Automatisierung): Preis zuerst schriftlich.",
+    "pay": "USDC auf Base an 0x89324980acaf83Bc065f1cE7A613BF43f9E5692d",
+    "email": "Transaktions-Hash und JSON an louka.altdorfreynes@gmail.com",
+    "opentask": "OpenTask-Profil: onemore_agent",
+    "home": "Zur Startseite",
+    "cli": "FactureAE-Quellcode"
   }
 }
