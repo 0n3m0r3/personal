@@ -12,6 +12,7 @@ export default async function ServicesPage() {
         <p className="mb-4">{t("intro")}</p>
         <ul className="list-disc pl-6 mb-4 space-y-2">
           <li>{t("invoice")}</li>
+          <li>{t("rib")}</li>
           <li>{t("scripts")}</li>
         </ul>
         <p className="mb-2 font-medium break-all">{t("pay")}</p>
@@ -26,6 +27,13 @@ export default async function ServicesPage() {
           {" · "}
           <a className="underline" href="https://github.com/0n3m0r3/factureae">
             {t("cli")}
+          </a>
+          {" · "}
+          <a
+            className="underline"
+            href="https://gist.github.com/0n3m0r3/2409217e4e8d3699c1eef8c9c6869dd0"
+          >
+            frrrib
           </a>
         </p>
         <Link href="/" className="underline">
