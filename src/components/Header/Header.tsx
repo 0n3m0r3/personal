@@ -1,25 +1,26 @@
 import Image from "next/image";
-import MobileLogo from "../../../public/assests/logo/logo_mobile.png";
-import DesktopLogo from "../../../public/assests/logo/logo_desktop.png";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Select from "./Select";
 
 export default function Header() {
+  const t = useTranslations("common");
   return (
-    <header className="bg-white flex p-4 justify-between font-sans md:pt-8 md:mx-32 md:font-extrabold md:text-3xl">
-      <div className="flex space-x-4">
-        <div className="md:hidden">
-          <Image src={MobileLogo} alt="Mobile Logo" />
-        </div>
-        <div className="hidden md:block">
-          <Image src={DesktopLogo} alt="Desktop Logo" />
-        </div>
-        <div className="flex justify-center items-center">
-          <h1 className="text-primary font-bold">Louka Altdorf Reynes</h1>
-        </div>
-      </div>
-      <div className="flex justify-center items-center">
-        <Select />
-      </div>
+    <header className="page-gutter flex items-center justify-between py-4 md:py-8">
+      <Link href="/" className="flex items-center gap-3 md:gap-5">
+        <Image
+          src="/assests/logo/logo_desktop.png"
+          alt=""
+          width={91}
+          height={91}
+          className="h-12 w-12 object-contain md:h-[91px] md:w-[91px]"
+          priority
+        />
+        <span className="font-sans text-lg font-extrabold leading-tight text-primary md:text-[37px]">
+          {t("name")}!
+        </span>
+      </Link>
+      <Select />
     </header>
   );
 }

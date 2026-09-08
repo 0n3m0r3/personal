@@ -4,10 +4,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Mulish } from "next/font/google";
+import { Fraunces, Mulish } from "next/font/google";
 import StoreProvider from "../StoreProvider";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Louka Altdorf Reynes",
@@ -16,8 +16,15 @@ export const metadata: Metadata = {
 
 const mulish = Mulish({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-mulish",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
 });
 
 export default async function RootLayout({
@@ -27,19 +34,20 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={mulish.variable}>
-        {/* Wrap the app in Redux Provider */}
+      <body
+        className={`${mulish.variable} ${fraunces.variable} bg-white font-sans antialiased`}
+      >
         <StoreProvider>
-          {/* Wrap the app in NextIntlClientProvider */}
           <NextIntlClientProvider messages={messages}>
+            <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </StoreProvider>
       </body>

@@ -4,15 +4,121 @@
     "english": "Anglais",
     "german": "Allemand"
   },
-  "hero": {
-    "hello": "Bonjour !",
-    "welcome": "Je m'appelle Louka Altdorf Reynes !",
-    "button": "Télécharger mon CV"
+  "nav": {
+    "home": "Maison",
+    "work": "Travail",
+    "me": "Moi",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
-  "presentation": {
-    "description": "En tant que passionné de développement informatique, je me permets de vous présenter mes compétences. Je serai ravi de vous en dire plus lors d’un entretien. N'hésitez pas à me contacter pour convenir d'un rendez-vous.",
-    "button": "Télécharger mon CV",
-    "servicesLink": "Petites missions payantes"
+  "common": {
+    "connect": "Me connecter",
+    "learnMore": "Apprendre à me connaître",
+    "start": "Commencer",
+    "copyEmail": "Copier l'e-mail",
+    "copied": "E-mail copié",
+    "resume": "Resume",
+    "name": "Louka Altdorf Reynes"
+  },
+  "hero": {
+    "hello": "Bonjour le monde!",
+    "welcome": "Je m'appelle Louka Altdorf Reynes !"
+  },
+  "intro": {
+    "description": "En tant que passionné de développement informatique, je me permets de vous présenter mes compétences. Je serai ravi de vous en dire plus lors d’un entretien. N'hésitez pas à me contacter pour convenir d'un rendez-vous."
+  },
+  "about": {
+    "title": "About Louka Altdorf Reynes",
+    "alternance": "Alternance Bachelor Développeur d’Applications (12 mois)",
+    "rhythm": "3 semaines en entreprise / 1 semaine en école",
+    "description": "En tant que passionné de développement informatique, je me permets de vous présenter mes compétences. Je serai ravi de vous en dire plus lors d’un entretien. N'hésitez pas à me contacter pour convenir d'un rendez-vous."
+  },
+  "experience": {
+    "title": "EXPÉRIENCES PROFESSIONNELLES",
+    "jobs": [
+      {
+        "company": "Fortaine Software",
+        "role": "Customer Success Engineer",
+        "dates": "03 Octobre 2022 - 02 Octobre 2024",
+        "points": [
+          "Product Owner",
+          "Relations client",
+          "Développement Full-Stack JS"
+        ]
+      },
+      {
+        "company": "Stage Atos Worldline",
+        "role": "Stagiaire",
+        "dates": "2016",
+        "points": [
+          "Découverte du développement Java",
+          "Découverte du développement Web"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "knowHow": "SAVOIR-FAIRE",
+    "education": "FORMATIONS",
+    "items": [
+      {
+        "title": "Développement Backend (Node.js, NextJS, etc.)",
+        "body": "APIs, services et applications serveur avec Node.js et Next.js."
+      },
+      {
+        "title": "Développement Frontend (React, Tailwind CSS)",
+        "body": "Interfaces web modernes, accessibles et responsives."
+      },
+      {
+        "title": "Conception et mise en place de bases de données",
+        "body": "PostgreSQL, CosmosDB et modélisation de données."
+      },
+      {
+        "title": "Conception et architecture de WebApp",
+        "body": "Découpage, flux et architecture d’applications web."
+      },
+      {
+        "title": "Résolution de problèmes complexes",
+        "body": "Analyse, débogage et livrables à périmètre clair."
+      },
+      {
+        "title": "Utilisation d’Azure et de Google Cloud",
+        "body": "Déploiement et services cloud Azure et Google Cloud."
+      }
+    ],
+    "formations": [
+      {
+        "title": "Alternance Bachelor Développeur d’Applications",
+        "meta": "12 mois · 3 semaines en entreprise / 1 semaine en école"
+      }
+    ]
+  },
+  "collaboration": {
+    "text": "Faites-moi savoir si vous souhaitez parler d'une potentielle collaboration. Je suis disponible pour travailler en freelance."
+  },
+  "tech": {
+    "title": "TECHNOLOGIES & OUTILS"
+  },
+  "testimonials": {
+    "title": "Avis Clients",
+    "items": [
+      {
+        "name": "Dennis Hopper",
+        "tags": ["Designer", "Developer"],
+        "quoteBefore": "It is professional, considers everyone's time, can think about the whole problem and ",
+        "quoteHighlight": "not only in a small niche",
+        "quoteAfter": ", friendly, and Development."
+      }
+    ]
+  },
+  "project": {
+    "title": "Avez-vous un projet en tête? Commençons.",
+    "body": "Vous recherchez un partenaire solide pour le projet que vous avez en tête. Connectez-vous avec moi pour faciliter votre travail."
+  },
+  "footer": {
+    "cta": "Intéressé à travailler ensemble ? Envoyez-moi un message",
+    "copyright": "Copyright © {year}. Louka Altdorf Reynes"
   },
   "services": {
     "title": "Petites missions techniques payantes",

@@ -4,15 +4,121 @@
     "english": "English",
     "german": "German"
   },
-  "hero": {
-    "hello": "Hello !",
-    "welcome": "My name is Louka Altdorf Reynes !",
-    "button": "Download my resume"
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "me": "Me",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
-  "presentation": {
-    "description": "As a computer development enthusiast, I allow myself to present you my skills. I will be happy to tell you more during an interview. Do not hesitate to contact me to arrange a meeting.",
-    "button": "Download my resume",
-    "servicesLink": "Small paid work"
+  "common": {
+    "connect": "Get in touch",
+    "learnMore": "Get to know me",
+    "start": "Get started",
+    "copyEmail": "Copy email",
+    "copied": "Email copied",
+    "resume": "Resume",
+    "name": "Louka Altdorf Reynes"
+  },
+  "hero": {
+    "hello": "Hello world!",
+    "welcome": "My name is Louka Altdorf Reynes!"
+  },
+  "intro": {
+    "description": "As a software development enthusiast, I would like to present my skills. I would be glad to tell you more in an interview. Feel free to contact me to arrange a meeting."
+  },
+  "about": {
+    "title": "About Louka Altdorf Reynes",
+    "alternance": "Work-study Bachelor in Application Development (12 months)",
+    "rhythm": "3 weeks in company / 1 week in school",
+    "description": "As a software development enthusiast, I would like to present my skills. I would be glad to tell you more in an interview. Feel free to contact me to arrange a meeting."
+  },
+  "experience": {
+    "title": "PROFESSIONAL EXPERIENCE",
+    "jobs": [
+      {
+        "company": "Fortaine Software",
+        "role": "Customer Success Engineer",
+        "dates": "03 October 2022 - 02 October 2024",
+        "points": [
+          "Product Owner",
+          "Customer relations",
+          "Full-stack JS development"
+        ]
+      },
+      {
+        "company": "Atos Worldline internship",
+        "role": "Intern",
+        "dates": "2016",
+        "points": [
+          "Introduction to Java development",
+          "Introduction to web development"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "knowHow": "SKILLS",
+    "education": "EDUCATION",
+    "items": [
+      {
+        "title": "Backend development (Node.js, Next.js, etc.)",
+        "body": "APIs, services and server-side apps with Node.js and Next.js."
+      },
+      {
+        "title": "Frontend development (React, Tailwind CSS)",
+        "body": "Modern, accessible, responsive web interfaces."
+      },
+      {
+        "title": "Database design and setup",
+        "body": "PostgreSQL, CosmosDB and data modeling."
+      },
+      {
+        "title": "Web app design and architecture",
+        "body": "Structure, flows and architecture for web applications."
+      },
+      {
+        "title": "Complex problem solving",
+        "body": "Analysis, debugging and clearly scoped deliverables."
+      },
+      {
+        "title": "Azure and Google Cloud",
+        "body": "Deployment and cloud services on Azure and Google Cloud."
+      }
+    ],
+    "formations": [
+      {
+        "title": "Work-study Bachelor in Application Development",
+        "meta": "12 months · 3 weeks in company / 1 week in school"
+      }
+    ]
+  },
+  "collaboration": {
+    "text": "Let me know if you would like to talk about a potential collaboration. I am available for freelance work."
+  },
+  "tech": {
+    "title": "TECHNOLOGIES & TOOLS"
+  },
+  "testimonials": {
+    "title": "Client reviews",
+    "items": [
+      {
+        "name": "Dennis Hopper",
+        "tags": ["Designer", "Developer"],
+        "quoteBefore": "It is professional, considers everyone's time, can think about the whole problem and ",
+        "quoteHighlight": "not only in a small niche",
+        "quoteAfter": ", friendly, and Development."
+      }
+    ]
+  },
+  "project": {
+    "title": "Have a project in mind? Let's start.",
+    "body": "Looking for a solid partner for the project you have in mind? Get in touch so we can make the work easier."
+  },
+  "footer": {
+    "cta": "Interested in working together? Send me a message",
+    "copyright": "Copyright © {year}. Louka Altdorf Reynes"
   },
   "services": {
     "title": "Small paid technical work",

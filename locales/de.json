@@ -4,15 +4,121 @@
     "english": "Englisch",
     "german": "Deutsch"
   },
-  "hero": {
-    "hello": "Hallo !",
-    "welcome": "Mein Name ist Louka Altdorf Reynes !",
-    "button": "Laden Sie meinen Lebenslauf herunter"
+  "nav": {
+    "home": "Start",
+    "work": "Arbeit",
+    "me": "Ich",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
-  "presentation": {
-    "description": "Als Computerentwicklungs-Enthusiast erlaube ich mir, Ihnen meine Fähigkeiten vorzustellen. Ich werde mich freuen, Ihnen während eines Interviews mehr zu erzählen. Zögern Sie nicht, mich zu kontaktieren, um ein Treffen zu vereinbaren.",
-    "button": "Laden Sie meinen Lebenslauf herunter",
-    "servicesLink": "Kleine bezahlte Arbeiten"
+  "common": {
+    "connect": "Kontakt aufnehmen",
+    "learnMore": "Mehr über mich",
+    "start": "Loslegen",
+    "copyEmail": "E-Mail kopieren",
+    "copied": "E-Mail kopiert",
+    "resume": "Lebenslauf",
+    "name": "Louka Altdorf Reynes"
+  },
+  "hero": {
+    "hello": "Hallo Welt!",
+    "welcome": "Mein Name ist Louka Altdorf Reynes!"
+  },
+  "intro": {
+    "description": "Als Enthusiast der Softwareentwicklung stelle ich Ihnen gerne meine Kompetenzen vor. Ich erzähle Ihnen mehr in einem Gespräch. Kontaktieren Sie mich, um einen Termin zu vereinbaren."
+  },
+  "about": {
+    "title": "About Louka Altdorf Reynes",
+    "alternance": "Duales Bachelor-Studium Anwendungsentwicklung (12 Monate)",
+    "rhythm": "3 Wochen im Unternehmen / 1 Woche in der Schule",
+    "description": "Als Enthusiast der Softwareentwicklung stelle ich Ihnen gerne meine Kompetenzen vor. Ich erzähle Ihnen mehr in einem Gespräch. Kontaktieren Sie mich, um einen Termin zu vereinbaren."
+  },
+  "experience": {
+    "title": "BERUFSERFAHRUNG",
+    "jobs": [
+      {
+        "company": "Fortaine Software",
+        "role": "Customer Success Engineer",
+        "dates": "03. Oktober 2022 - 02. Oktober 2024",
+        "points": [
+          "Product Owner",
+          "Kundenbeziehungen",
+          "Full-Stack-JS-Entwicklung"
+        ]
+      },
+      {
+        "company": "Praktikum Atos Worldline",
+        "role": "Praktikant",
+        "dates": "2016",
+        "points": [
+          "Einstieg in die Java-Entwicklung",
+          "Einstieg in die Webentwicklung"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "knowHow": "KOMPETENZEN",
+    "education": "AUSBILDUNG",
+    "items": [
+      {
+        "title": "Backend-Entwicklung (Node.js, Next.js usw.)",
+        "body": "APIs, Dienste und serverseitige Apps mit Node.js und Next.js."
+      },
+      {
+        "title": "Frontend-Entwicklung (React, Tailwind CSS)",
+        "body": "Moderne, barrierearme, responsive Weboberflächen."
+      },
+      {
+        "title": "Konzeption und Aufbau von Datenbanken",
+        "body": "PostgreSQL, CosmosDB und Datenmodellierung."
+      },
+      {
+        "title": "Konzeption und Architektur von Web-Apps",
+        "body": "Struktur, Abläufe und Architektur für Webanwendungen."
+      },
+      {
+        "title": "Lösung komplexer Probleme",
+        "body": "Analyse, Debugging und klar abgegrenzte Lieferungen."
+      },
+      {
+        "title": "Azure und Google Cloud",
+        "body": "Deployment und Cloud-Dienste auf Azure und Google Cloud."
+      }
+    ],
+    "formations": [
+      {
+        "title": "Duales Bachelor-Studium Anwendungsentwicklung",
+        "meta": "12 Monate · 3 Wochen im Unternehmen / 1 Woche in der Schule"
+      }
+    ]
+  },
+  "collaboration": {
+    "text": "Melden Sie sich, wenn Sie über eine mögliche Zusammenarbeit sprechen möchten. Ich bin für Freelance-Arbeit verfügbar."
+  },
+  "tech": {
+    "title": "TECHNOLOGIEN & TOOLS"
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "items": [
+      {
+        "name": "Dennis Hopper",
+        "tags": ["Designer", "Developer"],
+        "quoteBefore": "It is professional, considers everyone's time, can think about the whole problem and ",
+        "quoteHighlight": "not only in a small niche",
+        "quoteAfter": ", friendly, and Development."
+      }
+    ]
+  },
+  "project": {
+    "title": "Haben Sie ein Projekt im Kopf? Legen wir los.",
+    "body": "Sie suchen einen soliden Partner für Ihr Projekt. Schreiben Sie mir, damit wir die Arbeit erleichtern."
+  },
+  "footer": {
+    "cta": "Lust auf Zusammenarbeit? Schicken Sie mir eine Nachricht",
+    "copyright": "Copyright © {year}. Louka Altdorf Reynes"
   },
   "services": {
     "title": "Kleine bezahlte technische Arbeiten",
