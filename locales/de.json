@@ -21,6 +21,7 @@
     "rib": "frrib: 5 USDC auf Base für ein CSV-Paket französischer RIB-Schlüssel / IBAN-Prüfungen. CLI ist öffentlich (Gist 0n3m0r3/2409217e4e8d3699c1eef8c9c6869dd0).",
     "relance": "frrelance: 6 USDC auf Base für ausgefüllte französische Zahlungserinnerungs-PDFs (L441-10). CLI öffentlich (Gist 0n3m0r3/58cf7c966b188f5ba7a30ee2d0dbfa77).",
     "devis": "frdevis: 7 USDC auf Base für ausgefüllte französische Angebots-PDFs (kein Rechnung; 293 B). CLI öffentlich (Gist 0n3m0r3/3684ca9ec09061ad836fb109c1138faa).",
+    "fec": "frfec: 8 USDC auf Base für eine ausgefüllte FEC (CGI Art. A47 A-1) aus Ihrem Journal-CSV, ≤200 Zeilen. CLI öffentlich (Gist 0n3m0r3/0b466853c1c82b951ff525b6da849647).",
     "scripts": "Getestetes Python (CSV/JSON, PDF, kleine Automatisierung): Preis zuerst schriftlich.",
     "pay": "USDC auf Base an 0x89324980acaf83Bc065f1cE7A613BF43f9E5692d",
     "email": "Transaktions-Hash und JSON an louka.altdorfreynes@gmail.com",

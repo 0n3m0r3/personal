@@ -15,6 +15,7 @@ export default async function ServicesPage() {
           <li>{t("rib")}</li>
           <li>{t("relance")}</li>
           <li>{t("devis")}</li>
+          <li>{t("fec")}</li>
           <li>{t("scripts")}</li>
         </ul>
         <p className="mb-2 font-medium break-all">{t("pay")}</p>
@@ -50,6 +51,13 @@ export default async function ServicesPage() {
             href="https://gist.github.com/0n3m0r3/3684ca9ec09061ad836fb109c1138faa"
           >
             frdevis
+          </a>
+          {" · "}
+          <a
+            className="underline"
+            href="https://gist.github.com/0n3m0r3/0b466853c1c82b951ff525b6da849647"
+          >
+            frfec
           </a>
         </p>
         <Link href="/" className="underline">
