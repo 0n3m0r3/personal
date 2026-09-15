@@ -5,9 +5,9 @@ const LOGOS = [
   { src: "/figma/tech-jetbrains.png", alt: "JetBrains" },
   { src: "/figma/tech-next.svg", alt: "Next.js" },
   { src: "/figma/tech-react.svg", alt: "React" },
-  { src: "/figma/tech-vscode.svg", alt: "VS Code" },
-  { src: "/figma/tech-docker.svg", alt: "Docker" },
-  { src: "/figma/tech-node.svg", alt: "Node.js" },
+  { src: "/figma/tech-vscode.png", alt: "VS Code" },
+  { src: "/figma/tech-docker.png", alt: "Docker" },
+  { src: "/figma/tech-node.png", alt: "Node.js" },
 ];
 
 export default function Technologies() {
