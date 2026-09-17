@@ -3,7 +3,7 @@ import Button from "@/components/Ui/Button";
 
 export default async function ServicesPage() {
   const t = await getTranslations("services");
-  const items = [t("invoice"), t("rib"), t("relance"), t("scripts")];
+  const items = [t("invoice"), t("rib"), t("relance"), t("devis"), t("fec"), t("scripts")];
 
   return (
     <main className="bg-white">
@@ -51,6 +51,18 @@ export default async function ServicesPage() {
               href="https://gist.github.com/0n3m0r3/58cf7c966b188f5ba7a30ee2d0dbfa77"
             >
               frrelance
+            </a>
+            <a
+              className="underline decoration-orange underline-offset-4"
+              href="https://gist.github.com/0n3m0r3/3684ca9ec09061ad836fb109c1138faa"
+            >
+              frdevis
+            </a>
+            <a
+              className="underline decoration-orange underline-offset-4"
+              href="https://gist.github.com/0n3m0r3/0b466853c1c82b951ff525b6da849647"
+            >
+              frfec
             </a>
           </p>
         </div>
