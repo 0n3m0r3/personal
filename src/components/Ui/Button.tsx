@@ -18,21 +18,11 @@ const variantClass: Record<Variant, string> = {
   primary:
     "bg-primary text-white hover:bg-primary-dark focus-visible:ring-primary",
   accent:
-    "bg-orange text-white hover:bg-[#e8683f] focus-visible:ring-orange",
+    "bg-orange text-primary-dark hover:bg-[#ff906d] focus-visible:ring-orange",
 };
 
-function Arrow({ src, className }: { src: string; className?: string }) {
-  return (
-    <span
-      className={classNames(
-        "relative inline-flex size-5 -rotate-[135deg] overflow-visible",
-        className
-      )}
-    >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt="" className="size-full object-contain" />
-    </span>
-  );
+function Arrow({ className }: { src: string; className?: string }) {
+  return <svg viewBox="0 0 24 24" className={classNames("size-5", className)} fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
 export default function Button({
@@ -46,7 +36,7 @@ export default function Button({
 }: ButtonProps) {
   const t = useTranslations();
   const classes = classNames(
-    "inline-flex items-center justify-center gap-2 rounded-btn px-6 py-4 font-sans text-sm font-bold leading-none shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-8 md:py-5 md:text-lg",
+    "portfolio-button inline-flex items-center justify-center gap-2 rounded-btn px-6 py-4 font-sans text-sm font-bold leading-none shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-8 md:py-5 md:text-lg",
     variantClass[variant],
     className
   );
@@ -56,7 +46,7 @@ export default function Button({
       <span>{t(message)}</span>
       <Arrow
         src={arrowSrc}
-        className={variant === "accent" ? "brightness-0 invert" : undefined}
+
       />
     </>
   );

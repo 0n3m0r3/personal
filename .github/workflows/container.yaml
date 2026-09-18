@@ -1,0 +1,58 @@
+name: portfolio-container
+on:
+  pull_request:
+  push:
+    branches: [main, feat/finish-portfolio]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-container-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  arm64:
+    runs-on: ubuntu-24.04-arm
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f
+      - uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9
+        if: github.event_name != 'pull_request'
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and validate ARM64 container
+        env:
+          PUBLISH: ${{ github.event_name != 'pull_request' }}
+          REVISION: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          docker buildx build --platform linux/arm64 --load --tag "ghcr.io/0n3m0r3/personal:sha-${REVISION}" .
+          docker run -d --name smoke --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --tmpfs /app/.next/cache:uid=1000,gid=1000,size=134217728 \
+            --tmpfs /tmp:uid=1000,gid=1000,size=16777216 \
+            -p 127.0.0.1:3003:3000 "ghcr.io/0n3m0r3/personal:sha-${REVISION}"
+          trap 'docker logs smoke; docker rm -f smoke' EXIT
+          for _ in {1..20}; do
+            if curl -fsS http://127.0.0.1:3003/api/health; then break; fi
+            sleep 1
+          done
+          node tests/deployment-smoke.mjs
+          if [ "$PUBLISH" = true ]; then
+            docker buildx build --platform linux/arm64 --push \
+              --tag "ghcr.io/0n3m0r3/personal:sha-${REVISION}" --metadata-file /tmp/image.json .
+          fi
+          if [ "$PUBLISH" = true ]; then
+            digest="$(jq -r '."containerimage.digest"' /tmp/image.json)"
+            printf 'ghcr.io/0n3m0r3/personal@%s\n' "$digest" > image-digest.txt
+            cat image-digest.txt >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: github.event_name != 'pull_request'
+        with:
+          name: image-digest
+          path: image-digest.txt
+          if-no-files-found: error

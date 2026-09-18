@@ -1,0 +1,8 @@
+.git
+.infra-deploy
+.next
+node_modules
+.env*
+!.env.example
+docs
+*.tsbuildinfo

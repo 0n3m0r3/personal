@@ -1,18 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { CONTACT } from "@/lib/contact";
 
 export default function CopyEmail() {
   const t = useTranslations("common");
   const [copied, setCopied] = useState(false);
+  const timer = useRef<ReturnType<typeof setTimeout>>();
+  useEffect(() => () => clearTimeout(timer.current), []);
 
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(CONTACT.email);
       setCopied(true);
-      window.setTimeout(() => setCopied(false), 2000);
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setCopied(false), 2000);
     } catch {
       window.location.href = `mailto:${CONTACT.email}`;
     }
@@ -28,7 +31,7 @@ export default function CopyEmail() {
         <span className="absolute left-0 top-0 h-4 w-3.5 rounded-[3px] border-2 border-orange" />
         <span className="absolute left-1 top-1 h-4 w-3.5 rounded-[2px] bg-orange" />
       </span>
-      {copied ? t("copied") : t("copyEmail")}
+      <span aria-live="polite">{copied ? t("copied") : t("copyEmail")}</span>
     </button>
   );
 }

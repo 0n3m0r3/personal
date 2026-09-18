@@ -1,47 +1,42 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { CONTACT } from "@/lib/contact";
 import ContactPills from "../Ui/ContactPills";
 import CopyEmail from "./CopyEmail";
-
 export default function Footer() {
   const t = useTranslations();
-  const year = new Date().getFullYear();
-
   return (
-    <footer id="contact" className="bg-ink text-white">
-      <div className="page-gutter pb-10 pt-32 md:pt-40">
-        <div className="flex justify-center">
-          <ContactPills horizontal className="[&>a]:sm:max-w-none [&>a]:sm:flex-1" />
-        </div>
-
-        <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-[auto_1fr] md:items-center md:gap-16">
-          <nav className="grid grid-cols-2 gap-x-12 gap-y-4 font-sans text-lg font-bold capitalize md:text-[25px]">
-            <Link href="/" className="hover:text-orange">
-              {t("nav.home")}
-            </Link>
-            <span>{t("nav.linkedin")}</span>
-            <Link href="/services" className="hover:text-orange">
-              {t("nav.work")}
-            </Link>
-            <span>{t("nav.instagram")}</span>
-            <a href="#about" className="hover:text-orange">
-              {t("nav.me")}
+    <footer id="contact" className="site-footer">
+      <div className="footer-contacts page-gutter">
+        <ContactPills horizontal />
+      </div>
+      <div className="footer-divider">
+        <div className="footer-main page-gutter">
+          <nav aria-label={t("nav.footer")}>
+            <Link href="/">{t("nav.home")}</Link>
+            <Link href="/#work">{t("nav.work")}</Link>
+            <Link href="/#about">{t("nav.me")}</Link>
+            <Link href="/#projects">{t("nav.projects")}</Link>
+            <Link href="/services">{t("nav.services")}</Link>
+            <a
+              href={CONTACT.resumeHref}
+              download
+              hrefLang="fr"
+              type="application/pdf"
+            >
+              {t("common.resume")}
+              <span className="footer-format">{t("common.resumeFormat")}</span>
             </a>
-            <span>{t("nav.twitter")}</span>
           </nav>
-
-          <div className="flex flex-col items-stretch gap-4 rounded-card bg-white px-5 py-6 text-center md:flex-row md:items-center md:justify-between md:px-9 md:py-8 md:text-left">
-            <p className="font-sans text-base font-bold text-primary md:text-[25px] md:leading-tight">
-              {t("footer.cta")}
-            </p>
+          <div className="footer-email">
+            <p>{t("footer.cta")}</p>
             <CopyEmail />
           </div>
         </div>
-
-        <p className="mt-12 border-t border-white/10 pt-6 text-center font-sans text-sm font-medium md:text-xl">
-          {t("footer.copyright", { year })}
-        </p>
       </div>
+      <p className="footer-copyright">
+        {t("footer.copyright", { year: new Date().getFullYear() })}
+      </p>
     </footer>
   );
 }

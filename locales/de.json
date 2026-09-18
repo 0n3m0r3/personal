@@ -2,119 +2,276 @@
   "languageSelector": {
     "french": "Französisch",
     "english": "Englisch",
-    "german": "Deutsch"
+    "german": "Deutsch",
+    "label": "Sprache der Website"
   },
   "nav": {
-    "home": "Start",
-    "work": "Arbeit",
-    "me": "Ich",
-    "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "twitter": "Twitter"
+    "home": "Startseite",
+    "work": "Berufserfahrung",
+    "me": "Über mich",
+    "projects": "Projekte",
+    "services": "Leistungen",
+    "footer": "Fußzeilennavigation"
   },
   "common": {
     "connect": "Kontakt aufnehmen",
-    "learnMore": "Mehr über mich",
-    "start": "Loslegen",
+    "learnMore": "Mein Werdegang",
+    "start": "Projekt besprechen",
     "copyEmail": "E-Mail kopieren",
     "copied": "E-Mail kopiert",
-    "resume": "Lebenslauf",
-    "name": "Louka Altdorf Reynes"
+    "resume": "Lebenslauf laden",
+    "name": "Louka Altdorf Reynes",
+    "resumeFormat": "PDF · Französisch",
+    "resumeShort": "Lebenslauf",
+    "close": "Details schließen",
+    "explore": "Kompetenz entdecken",
+    "seeProjects": "Meine Projekte entdecken",
+    "backToTop": "Zurück nach oben"
   },
   "hero": {
     "hello": "Hallo Welt!",
-    "welcome": "Mein Name ist Louka Altdorf Reynes!"
+    "welcome": "Ich bin Louka Altdorf Reynes!",
+    "role": "Technischer Projektleiter · Fullstack-Entwickler"
   },
   "intro": {
-    "description": "Als Enthusiast der Softwareentwicklung stelle ich Ihnen gerne meine Kompetenzen vor. Ich erzähle Ihnen mehr in einem Gespräch. Kontaktieren Sie mich, um einen Termin zu vereinbaren."
+    "description": "Von der Planung bis zum Produktivbetrieb: Ich konzipiere SaaS-Produkte, entwickle ihre Anwendungen und integriere KI für konkrete Anwendungsfälle."
   },
   "about": {
-    "title": "About Louka Altdorf Reynes",
-    "alternance": "Duales Bachelor-Studium Anwendungsentwicklung (12 Monate)",
-    "rhythm": "3 Wochen im Unternehmen / 1 Woche in der Schule",
-    "description": "Als Enthusiast der Softwareentwicklung stelle ich Ihnen gerne meine Kompetenzen vor. Ich erzähle Ihnen mehr in einem Gespräch. Kontaktieren Sie mich, um einen Termin zu vereinbaren."
+    "title": "Über mich",
+    "role": "Technischer Projektleiter & Fullstack-Entwickler",
+    "location": "In Lille · 4 Jahre Erfahrung mit SaaS-Produkten im Produktivbetrieb",
+    "description": "Ich verbinde fachliche Anforderungen mit ihrer technischen Umsetzung: Architektur, Backend, Frontend, Deployment und Teamkoordination. Mein Schwerpunkt liegt an der Schnittstelle von Anwendungsentwicklung, KI und Cloud- oder selbst betriebener Infrastruktur.",
+    "languagesTitle": "Sprachen",
+    "languages": [
+      "Französisch · Muttersprache",
+      "Deutsch · Muttersprache",
+      "Englisch · C2"
+    ]
   },
   "experience": {
     "title": "BERUFSERFAHRUNG",
     "jobs": [
       {
-        "company": "Fortaine Software",
-        "role": "Customer Success Engineer",
-        "dates": "03. Oktober 2022 - 02. Oktober 2024",
+        "company": "Lainup SAS",
+        "role": "Technischer Projektleiter · Fullstack-Entwickler",
+        "dates": "Seit 2024",
         "points": [
-          "Product Owner",
-          "Kundenbeziehungen",
-          "Full-Stack-JS-Entwicklung"
+          "B2B-Projekte und interne Produkte von der Anforderungsaufnahme bis zum Deployment: Spezifikation, Aufwandsschätzung, Backlog und Lieferplanung.",
+          "Konzeption von Pitly, einer PWA für die Fahrzeugwartung, und Prototyping von Lain, einer Matching-Anwendung im Bereich psychische Gesundheit.",
+          "Webentwicklung, API-Integration und Betrieb: CI/CD, Containerisierung, Monitoring und Alarmierung."
+        ],
+        "stack": [
+          "Go / Gin",
+          "Next.js / React",
+          "PostgreSQL",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes"
         ]
       },
       {
-        "company": "Praktikum Atos Worldline",
-        "role": "Praktikant",
-        "dates": "2016",
+        "company": "FORTAINE Software",
+        "role": "Projektleiter",
+        "dates": "2023 – 2025",
         "points": [
-          "Einstieg in die Java-Entwicklung",
-          "Einstieg in die Webentwicklung"
+          "Leitung von BoB von der Idee bis zum öffentlichen MVP mit einem dreiköpfigen Team: UX/UI, Microservices-Architektur und Marketing.",
+          "KI-gestützte Erstellung von Angeboten und Factur-X-Pro-forma-Rechnungen aus WhatsApp-Sprachnachrichten mit Python und FastAPI.",
+          "Product Ownership und OKR-Tracking: 20 % höhere Iterationsgeschwindigkeit. Azure/GCP-Infrastruktur und Blue-Green-Deployments: 30 % weniger Regressionen."
+        ],
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "C# / ASP.NET",
+          "FastAPI",
+          "Azure / GCP",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "company": "FORTAINE Software",
+        "role": "Customer Success Engineer",
+        "dates": "2021 – 2023",
+        "points": [
+          "Refactoring des Zahlungsauslösedienstes zu einer PSD2-konformen NestJS-API für eine Microservices-Architektur.",
+          "Integration von Visa/Mastercard und einem responsiven 3-D-Secure-Ablauf: 20 % höhere Akzeptanzrate. Bank-Webhooks und automatisierter Zahlungsabgleich.",
+          "WhatsApp-Chatbot, dialogbasierte LangGraph-Agenten und dokumentenbasierte RAG-Pipeline mit Deployment auf GCP."
+        ],
+        "stack": [
+          "Node.js / NestJS",
+          "Next.js",
+          "3-D Secure",
+          "LangGraph",
+          "RAG",
+          "Cloud Run"
+        ]
+      },
+      {
+        "company": "Atos Worldline",
+        "role": "Praktikant in der Softwareentwicklung",
+        "dates": "2016 · 3 Monate",
+        "points": [
+          "Einstieg in Java- und Webentwicklung innerhalb eines Softwareteams.",
+          "Entwicklung eines Web-Prototyps zur Automatisierung des internen Reportings."
+        ],
+        "stack": [
+          "Java",
+          "Web",
+          "Reporting"
         ]
       }
-    ]
+    ],
+    "details": "Aufgaben und Technologien"
   },
   "skills": {
     "knowHow": "KOMPETENZEN",
     "education": "AUSBILDUNG",
     "items": [
       {
-        "title": "Backend-Entwicklung (Node.js, Next.js usw.)",
-        "body": "APIs, Dienste und serverseitige Apps mit Node.js und Next.js."
+        "title": "Frontend & Produkterlebnis",
+        "body": "HTML/CSS, JavaScript, TypeScript, React, Next.js und Tailwind für PWAs, Dashboards und Backoffices. UX/UI-Design und Umsetzung vom Entwurf bis zum Produkt.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "summary": "Klare Oberflächen, vom ersten Prototyp bis zur täglich genutzten Webanwendung.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "Eine PWA für die Fahrzeugwartung: MVP-Planung, Microservices-Architektur, Datenmodell mit 15 Tabellen, anbieterübergreifender Objektspeicher, Art Direction und Landingpage."
+          },
+          {
+            "title": "Lain",
+            "body": "Konzeption und Prototyping einer Matching-Anwendung im Bereich psychische Gesundheit, aufgenommen in die Vorinkubation bei EuraTechnologies in Lille."
+          }
+        ]
       },
       {
-        "title": "Frontend-Entwicklung (React, Tailwind CSS)",
-        "body": "Moderne, barrierearme, responsive Weboberflächen."
+        "title": "Backend & APIs",
+        "body": "Node.js (Express, Fastify, NestJS), Go (Gin), Python (FastAPI) und C# (ASP.NET). Sichere REST-APIs mit OAuth2/JWT, Microservices und ereignisgesteuerte Architekturen.",
+        "tags": [
+          "Go",
+          "NestJS",
+          "FastAPI"
+        ],
+        "summary": "APIs und Dienste, die fachliche Anforderungen in zuverlässige Anwendungen übersetzen.",
+        "examples": [
+          {
+            "title": "Lainup SAS",
+            "body": "Webentwicklung, API-Integration und Betrieb: CI/CD, Containerisierung, Monitoring und Alarmierung."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Refactoring des Zahlungsauslösedienstes zu einer PSD2-konformen NestJS-API für eine Microservices-Architektur."
+          }
+        ]
       },
       {
-        "title": "Konzeption und Aufbau von Datenbanken",
-        "body": "PostgreSQL, CosmosDB und Datenmodellierung."
+        "title": "KI, Agenten & Automatisierung",
+        "body": "Dialogbasierte Agenten, WhatsApp-Chatbots, LangGraph-Orchestrierung, LangSmith-Tracing und RAG-Pipelines. Automatisierung und Datenerfassung mit Python.",
+        "tags": [
+          "LangGraph",
+          "RAG",
+          "Python"
+        ],
+        "summary": "KI für konkrete Aufgaben: Gespräche, Dokumentensuche und Automatisierung.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "Von der WhatsApp-Sprachnachricht zum Angebot oder zur Factur-X-Pro-forma-Rechnung. Leitung eines dreiköpfigen Teams vom ersten Entwurf bis zum öffentlichen MVP."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "WhatsApp-Chatbot, dialogbasierte LangGraph-Agenten und dokumentenbasierte RAG-Pipeline mit Deployment auf GCP."
+          }
+        ]
       },
       {
-        "title": "Konzeption und Architektur von Web-Apps",
-        "body": "Struktur, Abläufe und Architektur für Webanwendungen."
+        "title": "Daten & Architektur",
+        "body": "SQL- und NoSQL-Modellierung mit PostgreSQL, MariaDB, MongoDB, CosmosDB und TimescaleDB. Integration von RabbitMQ und Objektspeicher.",
+        "tags": [
+          "PostgreSQL",
+          "MongoDB",
+          "RabbitMQ"
+        ],
+        "summary": "Stimmige Datenmodelle und ein kontrollierter Informationsfluss zwischen Diensten.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "Eine PWA für die Fahrzeugwartung: MVP-Planung, Microservices-Architektur, Datenmodell mit 15 Tabellen, anbieterübergreifender Objektspeicher, Art Direction und Landingpage."
+          }
+        ]
       },
       {
-        "title": "Lösung komplexer Probleme",
-        "body": "Analyse, Debugging und klar abgegrenzte Lieferungen."
+        "title": "DevOps, Cloud & Self-Hosting",
+        "body": "Azure, GCP, Docker und Kubernetes. GitHub-Actions-Pipelines, Blue-Green-Deployments, GitOps mit ArgoCD und Monitoring mit Prometheus/Grafana.",
+        "tags": [
+          "Kubernetes",
+          "Docker",
+          "ArgoCD"
+        ],
+        "summary": "Anwendungen bereitstellen, überwachen und betreiben – in der Cloud oder selbst gehostet.",
+        "examples": [
+          {
+            "title": "Selbst betriebene Infrastruktur",
+            "body": "K3s-Cluster auf einem ARM64-VPS, GitOps-Deployments mit ArgoCD, Monitoring mit Prometheus/Grafana, automatisierte Backups und privater Netzwerkzugang."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Product Ownership und OKR-Tracking: 20 % höhere Iterationsgeschwindigkeit. Azure/GCP-Infrastruktur und Blue-Green-Deployments: 30 % weniger Regressionen."
+          }
+        ]
       },
       {
-        "title": "Azure und Google Cloud",
-        "body": "Deployment und Cloud-Dienste auf Azure und Google Cloud."
+        "title": "Projektleitung & Zusammenarbeit",
+        "body": "Anforderungsanalyse, Spezifikationen, Aufwandsschätzung und Planung. Scrum, Product Ownership, OKR-Tracking und Code-Reviews. Führung, Problemlösung und klare Kommunikation.",
+        "tags": [
+          "Scrum",
+          "Product Ownership",
+          "OKR"
+        ],
+        "summary": "Von der Planung bis zur Auslieferung: eine gemeinsame Produktvision im Team.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "Von der WhatsApp-Sprachnachricht zum Angebot oder zur Factur-X-Pro-forma-Rechnung. Leitung eines dreiköpfigen Teams vom ersten Entwurf bis zum öffentlichen MVP."
+          },
+          {
+            "title": "Lain",
+            "body": "Konzeption und Prototyping einer Matching-Anwendung im Bereich psychische Gesundheit, aufgenommen in die Vorinkubation bei EuraTechnologies in Lille."
+          }
+        ]
       }
     ],
     "formations": [
       {
-        "title": "Duales Bachelor-Studium Anwendungsentwicklung",
-        "meta": "12 Monate · 3 Wochen im Unternehmen / 1 Woche in der Schule"
+        "title": "Bachelor CDA · Anwendungsdesign und -entwicklung",
+        "level": "Bac +3",
+        "meta": "CESI Lille"
+      },
+      {
+        "level": "Bac +2",
+        "title": "DI · Softwareentwicklung",
+        "meta": "CESI Lille"
+      },
+      {
+        "title": "Licence Informatique · Informatik",
+        "level": "Bac +3",
+        "meta": "UFR Sciences et Techniques · Rouen"
       }
-    ]
+    ],
+    "label": "Fähigkeiten und Ausbildung",
+    "inPractice": "In der Praxis"
   },
   "collaboration": {
-    "text": "Melden Sie sich, wenn Sie über eine mögliche Zusammenarbeit sprechen möchten. Ich bin für Freelance-Arbeit verfügbar."
+    "text": "Ein Produkt entwickeln, KI integrieren oder Infrastruktur zuverlässiger machen? Sprechen wir über Ihre Anforderungen und eine Zusammenarbeit."
   },
   "tech": {
     "title": "TECHNOLOGIEN & TOOLS"
   },
-  "testimonials": {
-    "title": "Kundenstimmen",
-    "items": [
-      {
-        "name": "Dennis Hopper",
-        "tags": ["Designer", "Developer"],
-        "quoteBefore": "It is professional, considers everyone's time, can think about the whole problem and ",
-        "quoteHighlight": "not only in a small niche",
-        "quoteAfter": ", friendly, and Development."
-      }
-    ]
-  },
   "project": {
-    "title": "Haben Sie ein Projekt im Kopf? Legen wir los.",
-    "body": "Sie suchen einen soliden Partner für Ihr Projekt. Schreiben Sie mir, damit wir die Arbeit erleichtern."
+    "title": "Ein Projekt im Kopf? Sprechen wir darüber.",
+    "body": "Fullstack-Entwicklung, technische Projektleitung oder KI-Integration: Lassen Sie uns Ihre Ziele, Rahmenbedingungen und nächsten Schritte besprechen."
   },
   "footer": {
     "cta": "Lust auf Zusammenarbeit? Schicken Sie mir eine Nachricht",
@@ -134,5 +291,115 @@
     "opentask": "OpenTask-Profil: onemore_agent",
     "home": "Zur Startseite",
     "cli": "FactureAE-Quellcode"
+  },
+  "projects": {
+    "title": "PROJEKTE & ERGEBNISSE",
+    "intro": "Von Grund auf konzipierte Produkte, Open-Source-Werkzeuge und Infrastruktur, die ich täglich betreibe.",
+    "items": [
+      {
+        "name": "Pitly",
+        "category": "Produkt · Lainup",
+        "body": "Eine PWA für die Fahrzeugwartung: MVP-Planung, Microservices-Architektur, Datenmodell mit 15 Tabellen, anbieterübergreifender Objektspeicher, Art Direction und Landingpage.",
+        "tags": [
+          "Go / Gin",
+          "PostgreSQL",
+          "RabbitMQ",
+          "PWA"
+        ]
+      },
+      {
+        "name": "BoB",
+        "category": "SaaS & KI · Fortaine",
+        "body": "Von der WhatsApp-Sprachnachricht zum Angebot oder zur Factur-X-Pro-forma-Rechnung. Leitung eines dreiköpfigen Teams vom ersten Entwurf bis zum öffentlichen MVP.",
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "FastAPI",
+          "Factur-X"
+        ]
+      },
+      {
+        "name": "Lain",
+        "category": "Prototyp · Lainup",
+        "body": "Konzeption und Prototyping einer Matching-Anwendung im Bereich psychische Gesundheit, aufgenommen in die Vorinkubation bei EuraTechnologies in Lille.",
+        "tags": [
+          "Produktkonzeption",
+          "Matching",
+          "Prototyping"
+        ]
+      },
+      {
+        "name": "Selbst betriebene Infrastruktur",
+        "category": "Persönliches Projekt",
+        "body": "K3s-Cluster auf einem ARM64-VPS, GitOps-Deployments mit ArgoCD, Monitoring mit Prometheus/Grafana, automatisierte Backups und privater Netzwerkzugang.",
+        "tags": [
+          "Kubernetes / K3s",
+          "ArgoCD",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "name": "VoxFetch-CESI",
+        "category": "Open Source · MIT",
+        "body": "PDF-Download-Werkzeug für ScholarVox, in TypeScript entwickelt und unter der MIT-Lizenz veröffentlicht.",
+        "tags": [
+          "TypeScript",
+          "PDF",
+          "MIT"
+        ]
+      },
+      {
+        "name": "gemini-openrouter-voice",
+        "category": "Open Source · MIT",
+        "body": "Chrome-Erweiterung für die Spracheingabe in Gemini, in JavaScript entwickelt und unter der MIT-Lizenz veröffentlicht.",
+        "tags": [
+          "JavaScript",
+          "Chrome",
+          "Sprache"
+        ]
+      }
+    ],
+    "moreTitle": "Weitere Erfahrungen",
+    "more": "Next.js/React-Websites und Landingpages auf Cloudflare sowie Python-Skripte zur Datenerfassung und Dokumentenerstellung. Beim HELMo × Technifutur-Hackathon in Lüttich gewann mein Team „Coop’log’“ den Preis für das am weitesten ausgearbeitete Projekt.",
+    "github": "Mein GitHub-Profil",
+    "fieldSummary": "Praktische Aufträge, Open Source und ein ausgezeichneter Hackathon.",
+    "discover": "Details entdecken"
+  },
+  "metadata": {
+    "title": "Louka Altdorf Reynes · Technischer Projektleiter & Fullstack-Entwickler",
+    "description": "Technischer Projektleiter und Fullstack-Entwickler in Lille. SaaS, Go, TypeScript, React, KI-Integration und Cloud-Infrastruktur. Werdegang, Projekte und Lebenslauf."
+  },
+  "carousel": {
+    "description": "Karussell",
+    "slide": "Element",
+    "instructions": "Mit den Pfeiltasten links und rechts durch die Elemente blättern.",
+    "position": "{current} von {total}",
+    "previous": "Vorheriges Element",
+    "next": "Nächstes Element",
+    "go": "Zu Position {number}",
+    "pause": "Automatischen Bildlauf anhalten",
+    "play": "Automatischen Bildlauf fortsetzen"
+  },
+  "chat": {
+    "open": "Den KI-Assistenten fragen",
+    "title": "Loukas KI-Assistent",
+    "close": "Gespräch schließen",
+    "notice": "Ein Assistent für Fragen zu Loukas Werdegang. Antworten können ungenau sein; bestätigen Sie die Details bitte mit ihm.",
+    "welcome": "Hallo! Ich bin Loukas KI-Assistent. Ich kann Ihnen seinen Werdegang, seine Fähigkeiten und seine Projekte vorstellen. Was möchten Sie erfahren?",
+    "conversation": "Gespräch mit dem KI-Assistenten",
+    "you": "Sie",
+    "assistant": "Loukas Assistent",
+    "thinking": "Antwort wird vorbereitet…",
+    "question": "Ihre Frage",
+    "placeholder": "Welche Projekte hat er entwickelt?",
+    "send": "Senden",
+    "stop": "Stoppen",
+    "stopped": "Antwort abgebrochen. Sie können Ihre Frage erneut senden.",
+    "error": "Der Assistent ist nicht verfügbar. Versuchen Sie es erneut oder kontaktieren Sie Louka per E-Mail.",
+    "busy": "Der Assistent ist beschäftigt. Bitte versuchen Sie es gleich erneut.",
+    "expired": "Dieses Gespräch ist abgelaufen. Senden Sie Ihre Frage erneut, um neu zu beginnen.",
+    "privacy": "Gespräch in diesem Tab gespeichert. Bitte keine sensiblen Daten teilen.",
+    "reset": "Gespräch löschen"
   }
 }

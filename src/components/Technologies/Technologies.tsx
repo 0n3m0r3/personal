@@ -1,47 +1,27 @@
 import { useTranslations } from "next-intl";
+import { TECHNOLOGIES } from "@/lib/technology";
 import SectionTitle from "../Ui/SectionTitle";
-
-const LOGOS = [
-  { src: "/figma/tech-jetbrains.png", alt: "JetBrains" },
-  { src: "/figma/tech-next.svg", alt: "Next.js" },
-  { src: "/figma/tech-react.svg", alt: "React" },
-  { src: "/figma/tech-vscode.png", alt: "VS Code" },
-  { src: "/figma/tech-docker.png", alt: "Docker" },
-  { src: "/figma/tech-node.png", alt: "Node.js" },
-];
-
+import Carousel from "../Ui/Carousel";
 export default function Technologies() {
   const t = useTranslations("tech");
   return (
-    <section className="page-gutter py-10 md:py-16">
+    <section className="tech-section">
       <SectionTitle>{t("title")}</SectionTitle>
-      <div className="mt-10 flex gap-4 overflow-x-auto pb-4 md:mt-14 md:grid md:grid-cols-6 md:overflow-visible md:pb-0">
-        {LOGOS.map((logo) => (
-          <div
-            key={logo.alt}
-            className="flex h-[180px] w-[160px] shrink-0 items-center justify-center rounded-card border border-primary bg-[#fafafa] px-4 md:h-[234px] md:w-auto"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+      <Carousel label={t("title")} variant="tech">
+        {TECHNOLOGIES.map(([id, name]) => (
+          <div key={id} className="tech-card">
             <img
-              src={logo.src}
-              alt={logo.alt}
-              className="max-h-[120px] w-auto max-w-full object-contain"
+              src={`/technology/${id}.svg`}
+              alt=""
+              width={90}
+              height={90}
+              loading="lazy"
+              draggable={false}
             />
+            <span>{name}</span>
           </div>
         ))}
-      </div>
-      <div className="mt-8 flex items-center justify-center gap-3" aria-hidden>
-        {LOGOS.map((logo, index) => (
-          <span
-            key={logo.alt}
-            className={
-              index === 1
-                ? "size-3.5 rounded-full bg-orange"
-                : "size-2.5 rounded-full bg-primary-dark"
-            }
-          />
-        ))}
-      </div>
+      </Carousel>
     </section>
   );
 }

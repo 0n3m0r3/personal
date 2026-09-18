@@ -5,7 +5,7 @@ import Experience from "@/components/Experience/Experience";
 import Skills from "@/components/Skills/Skills";
 import Collaboration from "@/components/Collaboration/Collaboration";
 import Technologies from "@/components/Technologies/Technologies";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import Projects from "@/components/Projects/Projects";
 import ProjectCta from "@/components/ProjectCta/ProjectCta";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Skills />
       <Collaboration />
       <Technologies />
-      <Testimonials />
+      <Projects />
       <ProjectCta />
     </main>
   );

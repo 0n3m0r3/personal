@@ -4,5 +4,6 @@ export const CONTACT = {
   email: "louka.altdorfreynes@gmail.com",
   githubUrl: "https://github.com/0n3m0r3",
   githubLabel: "https://github.com/0n3m0r3",
-  resumeHref: "/resume_en.pdf",
+  linkedinUrl: "https://www.linkedin.com/in/louka-altdorf-reynes-01baa1214/",
+  resumeHref: "/CV_Louka_Altdorf-Reynes.pdf",
 } as const;

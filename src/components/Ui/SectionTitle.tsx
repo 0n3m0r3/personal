@@ -10,7 +10,7 @@ export default function SectionTitle({
   return (
     <h2
       className={classNames(
-        "text-center font-sans text-2xl font-bold uppercase tracking-wide text-ink md:text-[45px] md:leading-tight",
+        "section-title",
         className
       )}
     >
