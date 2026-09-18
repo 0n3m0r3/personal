@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: personal-runtime
+  namespace: personal-staging
+data:
+  PORTFOLIO_CHAT_MODE: "off"
+  NEXT_TELEMETRY_DISABLED: "1"

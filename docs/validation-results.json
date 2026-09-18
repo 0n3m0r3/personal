@@ -1,0 +1,28 @@
+{
+  "mobile": {
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "LCP": "2.6 s",
+    "TBT": "0 ms",
+    "CLS": "0",
+    "fetchTime": "2026-09-18T13:54:39.637Z",
+    "lighthouseVersion": "13.4.1"
+  },
+  "desktop": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "LCP": "0.6 s",
+    "TBT": "0 ms",
+    "CLS": "0",
+    "fetchTime": "2026-09-18T13:54:51.294Z",
+    "lighthouseVersion": "13.4.1"
+  }
+}

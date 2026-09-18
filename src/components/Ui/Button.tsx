@@ -1,34 +1,74 @@
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { classNames } from "@/utils/classNames";
+
+type Variant = "primary" | "accent";
 
 interface ButtonProps {
   message: string;
-  icon?: React.ReactNode;
-  iconPosition?: "left" | "right";
-  messageColor?: string;
-  iconColor?: string;
-  backgroundColor?: string;
+  variant?: Variant;
+  href?: string;
+  onClick?: () => void;
+  type?: "button" | "submit";
+  className?: string;
+  arrowSrc?: string;
+}
+
+const variantClass: Record<Variant, string> = {
+  primary:
+    "bg-primary text-white hover:bg-primary-dark focus-visible:ring-primary",
+  accent:
+    "bg-orange text-primary-dark hover:bg-[#ff906d] focus-visible:ring-orange",
+};
+
+function Arrow({ className }: { src: string; className?: string }) {
+  return <svg viewBox="0 0 24 24" className={classNames("size-5", className)} fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
 export default function Button({
-  message, // complete translation path
-  icon,
-  iconPosition,
-  messageColor,
-  iconColor,
-  backgroundColor,
+  message,
+  variant = "primary",
+  href,
+  onClick,
+  type = "button",
+  className,
+  arrowSrc = "/figma/arrow.svg",
 }: ButtonProps) {
   const t = useTranslations();
+  const classes = classNames(
+    "portfolio-button inline-flex items-center justify-center gap-2 rounded-btn px-6 py-4 font-sans text-sm font-bold leading-none shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:px-8 md:py-5 md:text-lg",
+    variantClass[variant],
+    className
+  );
+
+  const content = (
+    <>
+      <span>{t(message)}</span>
+      <Arrow
+        src={arrowSrc}
+
+      />
+    </>
+  );
+
+  if (href) {
+    if (href.startsWith("/") && !href.startsWith("/resume") && !href.includes(".")) {
+      return (
+        <Link href={href} className={classes}>
+          {content}
+        </Link>
+      );
+    }
+    return (
+      <a href={href} className={classes}>
+        {content}
+      </a>
+    );
+  }
+
   return (
-    <button
-      className={`flex items-center justify-center px-4 md:px-6 py-4 md:py-6 border border-transparent rounded-[10px] shadow-sm text-sm md:text-lg font-medium font-sans text-white bg-[#242F65] hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${backgroundColor}`}
-    >
-      {icon && iconPosition === "left" && (
-        <span className={`mr-2 ${iconColor}`}>{icon}</span>
-      )}
-      <span className={messageColor}>{t(message)}</span>
-      {icon && iconPosition === "right" && (
-        <span className={`ml-2 ${iconColor}`}>{icon}</span>
-      )}
+    <button type={type} onClick={onClick} className={classes}>
+      {content}
     </button>
   );
 }

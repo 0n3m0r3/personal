@@ -2,17 +2,280 @@
   "languageSelector": {
     "french": "French",
     "english": "English",
-    "german": "German"
+    "german": "German",
+    "label": "Website language"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Experience",
+    "me": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "footer": "Footer navigation"
+  },
+  "common": {
+    "connect": "Get in touch",
+    "learnMore": "Explore my background",
+    "start": "Let’s talk",
+    "copyEmail": "Copy email",
+    "copied": "Email copied",
+    "resume": "Download my CV",
+    "name": "Louka Altdorf Reynes",
+    "resumeFormat": "PDF · French",
+    "resumeShort": "Résumé",
+    "close": "Close details",
+    "explore": "Explore this expertise",
+    "seeProjects": "Explore my projects",
+    "backToTop": "Back to top"
   },
   "hero": {
-    "hello": "Hello !",
-    "welcome": "My name is Louka Altdorf Reynes !",
-    "button": "Download my resume"
+    "hello": "Hello world!",
+    "welcome": "My name is Louka Altdorf Reynes!",
+    "role": "Technical project manager · Fullstack developer"
   },
-  "presentation": {
-    "description": "As a computer development enthusiast, I allow myself to present you my skills. I will be happy to tell you more during an interview. Do not hesitate to contact me to arrange a meeting.",
-    "button": "Download my resume",
-    "servicesLink": "Small paid work"
+  "intro": {
+    "description": "From scoping to production, I design SaaS products, build their applications and bring AI into practical use."
+  },
+  "about": {
+    "title": "About me",
+    "role": "Technical project manager & fullstack developer",
+    "location": "Based in Lille · 4 years of experience with SaaS products in production",
+    "description": "I connect business needs with technical delivery: architecture, backend, frontend, deployment and team coordination. My work brings together application development, AI integration and cloud or self-hosted infrastructure.",
+    "languagesTitle": "Languages",
+    "languages": [
+      "French · native",
+      "German · native",
+      "English · C2"
+    ]
+  },
+  "experience": {
+    "title": "PROFESSIONAL EXPERIENCE",
+    "jobs": [
+      {
+        "company": "Lainup SAS",
+        "role": "Technical project manager · Fullstack developer",
+        "dates": "Since 2024",
+        "points": [
+          "End-to-end delivery of B2B projects and internal products: requirements, specifications, estimates, backlog and delivery tracking.",
+          "Design of Pitly, a vehicle maintenance PWA, and prototyping of Lain, a mental-health-focused matching application.",
+          "Web development, API integration and service operations: CI/CD, containers, monitoring and alerting."
+        ],
+        "stack": [
+          "Go / Gin",
+          "Next.js / React",
+          "PostgreSQL",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes"
+        ]
+      },
+      {
+        "company": "FORTAINE Software",
+        "role": "Project manager",
+        "dates": "2023 – 2025",
+        "points": [
+          "Led BoB from idea to public MVP with a team of 3, covering UX/UI, microservices architecture and marketing.",
+          "Built AI-powered quotes and Factur-X pro forma invoices from WhatsApp voice messages using Python and FastAPI.",
+          "Product Ownership and OKR tracking increased iteration velocity by 20 %. Azure/GCP infrastructure and blue-green deployments reduced regressions by 30 %."
+        ],
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "C# / ASP.NET",
+          "FastAPI",
+          "Azure / GCP",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "company": "FORTAINE Software",
+        "role": "Customer Success Engineer",
+        "dates": "2021 – 2023",
+        "points": [
+          "Refactored the payment initiation service into a PSD2-compliant NestJS API suited to a microservices architecture.",
+          "Integrated Visa/Mastercard payments and a responsive 3-D Secure flow, improving acceptance by 20 %. Automated banking webhooks and reconciliation.",
+          "Built a WhatsApp chatbot, LangGraph conversational agents and a document-based RAG pipeline deployed on GCP."
+        ],
+        "stack": [
+          "Node.js / NestJS",
+          "Next.js",
+          "3-D Secure",
+          "LangGraph",
+          "RAG",
+          "Cloud Run"
+        ]
+      },
+      {
+        "company": "Atos Worldline",
+        "role": "Software engineering intern",
+        "dates": "2016 · 3 months",
+        "points": [
+          "Introduced to Java and web development within a software team.",
+          "Built a proof-of-concept web module to automate internal reporting."
+        ],
+        "stack": [
+          "Java",
+          "Web",
+          "Reporting"
+        ]
+      }
+    ],
+    "details": "Responsibilities and technologies"
+  },
+  "skills": {
+    "knowHow": "SKILLS",
+    "education": "EDUCATION",
+    "items": [
+      {
+        "title": "Frontend & product experience",
+        "body": "HTML/CSS, JavaScript, TypeScript, React, Next.js and Tailwind for PWAs, dashboards and back offices. UX/UI design and delivery from mockup to product.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "summary": "Clear interfaces, from early prototypes to web applications used every day.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "A vehicle maintenance PWA. MVP scoping, microservices architecture, a 15-table data model, multi-provider object storage, art direction and landing page."
+          },
+          {
+            "title": "Lain",
+            "body": "Design and prototyping of a mental-health-focused matching application, accepted into pre-incubation at EuraTechnologies in Lille."
+          }
+        ]
+      },
+      {
+        "title": "Backend & APIs",
+        "body": "Node.js (Express, Fastify, NestJS), Go (Gin), Python (FastAPI) and C# (ASP.NET). Secure OAuth2/JWT REST APIs, microservices and event-driven architectures.",
+        "tags": [
+          "Go",
+          "NestJS",
+          "FastAPI"
+        ],
+        "summary": "APIs and services that turn business needs into reliable applications.",
+        "examples": [
+          {
+            "title": "Lainup SAS",
+            "body": "Web development, API integration and service operations: CI/CD, containers, monitoring and alerting."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Refactored the payment initiation service into a PSD2-compliant NestJS API suited to a microservices architecture."
+          }
+        ]
+      },
+      {
+        "title": "AI, agents & automation",
+        "body": "Conversational agents, WhatsApp chatbots, LangGraph orchestration, LangSmith tracing and RAG pipelines. Python automation and data collection.",
+        "tags": [
+          "LangGraph",
+          "RAG",
+          "Python"
+        ],
+        "summary": "AI for practical use: conversation, document search and automation.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "From a WhatsApp voice message to a quote or Factur-X pro forma invoice. Led a team of 3 from the first mockup to the public MVP."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Built a WhatsApp chatbot, LangGraph conversational agents and a document-based RAG pipeline deployed on GCP."
+          }
+        ]
+      },
+      {
+        "title": "Data & architecture",
+        "body": "SQL and NoSQL modelling with PostgreSQL, MariaDB, MongoDB, CosmosDB and TimescaleDB. RabbitMQ and object storage integration.",
+        "tags": [
+          "PostgreSQL",
+          "MongoDB",
+          "RabbitMQ"
+        ],
+        "summary": "Coherent data models and a clear flow of information between services.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "A vehicle maintenance PWA. MVP scoping, microservices architecture, a 15-table data model, multi-provider object storage, art direction and landing page."
+          }
+        ]
+      },
+      {
+        "title": "DevOps, cloud & self-hosting",
+        "body": "Azure, GCP, Docker and Kubernetes. GitHub Actions pipelines, blue-green deployments, GitOps with ArgoCD and Prometheus/Grafana monitoring.",
+        "tags": [
+          "Kubernetes",
+          "Docker",
+          "ArgoCD"
+        ],
+        "summary": "Applications deployed, monitored and maintained, in the cloud or self-hosted.",
+        "examples": [
+          {
+            "title": "Self-hosted infrastructure",
+            "body": "K3s cluster on an ARM64 VPS, GitOps deployments with ArgoCD, Prometheus/Grafana monitoring, automated backups and private network access."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Product Ownership and OKR tracking increased iteration velocity by 20 %. Azure/GCP infrastructure and blue-green deployments reduced regressions by 30 %."
+          }
+        ]
+      },
+      {
+        "title": "Delivery & teamwork",
+        "body": "Scoping, specifications, estimates and planning. Scrum, Product Ownership, OKR tracking and code reviews. Leadership, problem solving and clear communication.",
+        "tags": [
+          "Scrum",
+          "Product Ownership",
+          "OKR"
+        ],
+        "summary": "From scoping to delivery, a product vision shared with the team.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "From a WhatsApp voice message to a quote or Factur-X pro forma invoice. Led a team of 3 from the first mockup to the public MVP."
+          },
+          {
+            "title": "Lain",
+            "body": "Design and prototyping of a mental-health-focused matching application, accepted into pre-incubation at EuraTechnologies in Lille."
+          }
+        ]
+      }
+    ],
+    "formations": [
+      {
+        "title": "Bachelor CDA · Application Design and Development",
+        "level": "Bac +3",
+        "meta": "CESI Lille"
+      },
+      {
+        "level": "Bac +2",
+        "title": "DI · Software Development",
+        "meta": "CESI Lille"
+      },
+      {
+        "title": "Licence in Computer Science",
+        "level": "Bac +3",
+        "meta": "UFR Sciences et Techniques · Rouen"
+      }
+    ],
+    "label": "Skills and education",
+    "inPractice": "In practice"
+  },
+  "collaboration": {
+    "text": "A product to build, AI to integrate or infrastructure to make more reliable? Let’s discuss your needs and how we can work together."
+  },
+  "tech": {
+    "title": "TECHNOLOGIES & TOOLS"
+  },
+  "project": {
+    "title": "Have a project in mind? Let’s talk.",
+    "body": "Fullstack development, technical project management or AI integration: let’s discuss your context, goals and next steps."
+  },
+  "footer": {
+    "cta": "Interested in working together? Send me a message",
+    "copyright": "Copyright © {year}. Louka Altdorf Reynes"
   },
   "services": {
     "title": "Small paid technical work",
@@ -28,5 +291,115 @@
     "opentask": "OpenTask profile: onemore_agent",
     "home": "Back to home",
     "cli": "FactureAE source"
+  },
+  "projects": {
+    "title": "PROJECTS & WORK",
+    "intro": "Products designed from the ground up, open-source tools and infrastructure I operate every day.",
+    "items": [
+      {
+        "name": "Pitly",
+        "category": "Product · Lainup",
+        "body": "A vehicle maintenance PWA. MVP scoping, microservices architecture, a 15-table data model, multi-provider object storage, art direction and landing page.",
+        "tags": [
+          "Go / Gin",
+          "PostgreSQL",
+          "RabbitMQ",
+          "PWA"
+        ]
+      },
+      {
+        "name": "BoB",
+        "category": "SaaS & AI · Fortaine",
+        "body": "From a WhatsApp voice message to a quote or Factur-X pro forma invoice. Led a team of 3 from the first mockup to the public MVP.",
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "FastAPI",
+          "Factur-X"
+        ]
+      },
+      {
+        "name": "Lain",
+        "category": "Prototype · Lainup",
+        "body": "Design and prototyping of a mental-health-focused matching application, accepted into pre-incubation at EuraTechnologies in Lille.",
+        "tags": [
+          "Product design",
+          "Matching",
+          "Prototyping"
+        ]
+      },
+      {
+        "name": "Self-hosted infrastructure",
+        "category": "Personal project",
+        "body": "K3s cluster on an ARM64 VPS, GitOps deployments with ArgoCD, Prometheus/Grafana monitoring, automated backups and private network access.",
+        "tags": [
+          "Kubernetes / K3s",
+          "ArgoCD",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "name": "VoxFetch-CESI",
+        "category": "Open source · MIT",
+        "body": "A PDF download tool for ScholarVox, developed in TypeScript and released under the MIT licence.",
+        "tags": [
+          "TypeScript",
+          "PDF",
+          "MIT"
+        ]
+      },
+      {
+        "name": "gemini-openrouter-voice",
+        "category": "Open source · MIT",
+        "body": "A Chrome extension adding voice input to Gemini, developed in JavaScript and released under the MIT licence.",
+        "tags": [
+          "JavaScript",
+          "Chrome",
+          "Voice"
+        ]
+      }
+    ],
+    "moreTitle": "Beyond these projects",
+    "more": "Next.js/React websites and landing pages deployed on Cloudflare; Python scripts for data collection and document generation. At the HELMo × Technifutur hackathon in Liège, my team “Coop’log’” won the award for the most fully realised project.",
+    "github": "Visit my GitHub profile",
+    "fieldSummary": "Hands-on work, open source and an award-winning hackathon.",
+    "discover": "Explore the details"
+  },
+  "metadata": {
+    "title": "Louka Altdorf Reynes · Technical project manager & fullstack developer",
+    "description": "Technical project manager and fullstack developer in Lille. SaaS products, Go, TypeScript, React, AI integration and cloud infrastructure. Experience, projects and CV."
+  },
+  "carousel": {
+    "description": "carousel",
+    "slide": "slide",
+    "instructions": "Use the left and right arrow keys to browse.",
+    "position": "{current} of {total}",
+    "previous": "Previous item",
+    "next": "Next item",
+    "go": "Go to position {number}",
+    "pause": "Pause automatic scrolling",
+    "play": "Resume automatic scrolling"
+  },
+  "chat": {
+    "open": "Ask the AI assistant",
+    "title": "Louka’s AI assistant",
+    "close": "Close conversation",
+    "notice": "An assistant to explore Louka’s background. Answers may be imperfect; please confirm the details with him.",
+    "welcome": "Hello! I’m Louka’s AI assistant. I can tell you about his background, skills and projects. What would you like to explore?",
+    "conversation": "Conversation with the AI assistant",
+    "you": "You",
+    "assistant": "Louka’s assistant",
+    "thinking": "Preparing an answer…",
+    "question": "Your question",
+    "placeholder": "What projects has he built?",
+    "send": "Send",
+    "stop": "Stop",
+    "stopped": "Answer stopped. You can send your question again.",
+    "error": "The assistant is unavailable. Try again or contact Louka by email.",
+    "busy": "The assistant is busy. Please try again shortly.",
+    "expired": "This conversation has expired. Send your question again to start fresh.",
+    "privacy": "Conversation saved in this tab. Please avoid sensitive information.",
+    "reset": "Clear conversation"
   }
 }

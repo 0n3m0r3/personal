@@ -1,13 +1,25 @@
-import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
-import Presentation from "@/components/Presentation/Presentation";
+import Intro from "@/components/Intro/Intro";
+import About from "@/components/About/About";
+import Experience from "@/components/Experience/Experience";
+import Skills from "@/components/Skills/Skills";
+import Collaboration from "@/components/Collaboration/Collaboration";
+import Technologies from "@/components/Technologies/Technologies";
+import Projects from "@/components/Projects/Projects";
+import ProjectCta from "@/components/ProjectCta/ProjectCta";
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-screen">
-      <Header />
+    <main className="bg-white">
       <Hero />
-      <Presentation />
-    </div>
+      <Intro />
+      <About />
+      <Experience />
+      <Skills />
+      <Collaboration />
+      <Technologies />
+      <Projects />
+      <ProjectCta />
+    </main>
   );
 }

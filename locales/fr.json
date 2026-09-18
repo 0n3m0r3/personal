@@ -2,31 +2,404 @@
   "languageSelector": {
     "french": "Français",
     "english": "Anglais",
-    "german": "Allemand"
+    "german": "Allemand",
+    "label": "Langue du site"
+  },
+  "nav": {
+    "home": "Accueil",
+    "work": "Expériences",
+    "me": "À propos",
+    "projects": "Projets",
+    "services": "Services",
+    "footer": "Navigation de pied de page"
+  },
+  "common": {
+    "connect": "Me contacter",
+    "learnMore": "Découvrir mon parcours",
+    "start": "Parlons de votre projet",
+    "copyEmail": "Copier l'e-mail",
+    "copied": "E-mail copié",
+    "resume": "Télécharger mon CV",
+    "name": "Louka Altdorf Reynes",
+    "resumeFormat": "PDF · Français",
+    "resumeShort": "CV",
+    "close": "Fermer les détails",
+    "explore": "Explorer ce savoir-faire",
+    "seeProjects": "Découvrir mes réalisations",
+    "backToTop": "Retour en haut"
   },
   "hero": {
-    "hello": "Bonjour !",
-    "welcome": "Je m'appelle Louka Altdorf Reynes !",
-    "button": "Télécharger mon CV"
+    "hello": "Bonjour le monde!",
+    "welcome": "Je m'appelle Louka Altdorf Reynes !",
+    "role": "Chef de projet technique · Développeur fullstack"
   },
-  "presentation": {
-    "description": "En tant que passionné de développement informatique, je me permets de vous présenter mes compétences. Je serai ravi de vous en dire plus lors d’un entretien. N'hésitez pas à me contacter pour convenir d'un rendez-vous.",
-    "button": "Télécharger mon CV",
-    "servicesLink": "Petites missions payantes"
+  "intro": {
+    "description": "Du cadrage à la production, je conçois des produits SaaS, développe leurs applications et intègre l’IA à des usages concrets."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "role": "Chef de projet technique & développeur fullstack",
+    "location": "Basé à Lille · 4 ans d’expérience sur des produits SaaS en production",
+    "description": "Je relie les besoins métier à leur réalisation technique : architecture, backend, frontend, mise en production et coordination d’équipe. Mon terrain de jeu se situe à la croisée du développement applicatif, de l’IA et des infrastructures cloud ou auto-hébergées.",
+    "languagesTitle": "Langues",
+    "languages": [
+      "Français · langue maternelle",
+      "Allemand · langue maternelle",
+      "Anglais · C2"
+    ]
+  },
+  "experience": {
+    "title": "EXPÉRIENCES PROFESSIONNELLES",
+    "jobs": [
+      {
+        "company": "Lainup SAS",
+        "role": "Chef de projet technique · Développeur fullstack",
+        "dates": "Depuis 2024",
+        "points": [
+          "Pilotage de projets B2B et de produits internes, du recueil des besoins au déploiement : cahier des charges, chiffrage, backlog et suivi de livraison.",
+          "Conception de Pitly, carnet d’entretien véhicule en PWA, et prototypage de Lain, application de mise en relation spécialisée en santé mentale.",
+          "Développement web, intégration d’APIs et exploitation des services : CI/CD, conteneurisation, supervision et alerting."
+        ],
+        "stack": [
+          "Go / Gin",
+          "Next.js / React",
+          "PostgreSQL",
+          "RabbitMQ",
+          "Docker",
+          "Kubernetes"
+        ]
+      },
+      {
+        "company": "FORTAINE Software",
+        "role": "Chef de projet",
+        "dates": "2023 – 2025",
+        "points": [
+          "Pilotage de BoB, de l’idéation au MVP public, avec une équipe de 3 personnes : UX/UI, architecture microservices et marketing.",
+          "Génération de devis et de factures pro forma Factur-X à partir de messages vocaux WhatsApp, avec Python et FastAPI.",
+          "Product Ownership et suivi d’OKR : +20 % de vélocité d’itération. Infrastructure Azure/GCP et déploiements blue-green : 30 % de régressions en moins."
+        ],
+        "stack": [
+          "Next.js",
+          "NestJS",
+          "C# / ASP.NET",
+          "FastAPI",
+          "Azure / GCP",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "company": "FORTAINE Software",
+        "role": "Customer Success Engineer",
+        "dates": "2021 – 2023",
+        "points": [
+          "Refactorisation du service d’initiation de paiement vers une API NestJS adaptée aux microservices et conforme DSP2.",
+          "Intégration Visa/Mastercard et parcours 3-D Secure responsive : taux d’acceptation amélioré de 20 %. Webhooks bancaires et rapprochement comptable automatisé.",
+          "Chatbot WhatsApp, agents conversationnels LangGraph et pipeline RAG sur bases documentaires, déployés sur GCP."
+        ],
+        "stack": [
+          "Node.js / NestJS",
+          "Next.js",
+          "3-D Secure",
+          "LangGraph",
+          "RAG",
+          "Cloud Run"
+        ]
+      },
+      {
+        "company": "Atos Worldline",
+        "role": "Stagiaire ingénieur logiciel",
+        "dates": "2016 · 3 mois",
+        "points": [
+          "Découverte du développement Java et Web au sein d’une équipe logicielle.",
+          "Développement d’un module Web de démonstration pour automatiser le reporting interne."
+        ],
+        "stack": [
+          "Java",
+          "Web",
+          "Reporting"
+        ]
+      }
+    ],
+    "details": "Missions et technologies"
+  },
+  "skills": {
+    "knowHow": "SAVOIR-FAIRE",
+    "education": "FORMATIONS",
+    "items": [
+      {
+        "title": "Frontend & expérience produit",
+        "body": "HTML/CSS, JavaScript, TypeScript, React, Next.js et Tailwind pour des PWA, tableaux de bord et back-offices. Conception UX/UI et passage de la maquette au produit.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "summary": "Des interfaces claires, du prototype aux applications web utilisées au quotidien.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "Carnet d’entretien véhicule en PWA. Cadrage du MVP, architecture microservices, modèle de 15 tables, stockage objet multi-fournisseur, direction artistique et landing page."
+          },
+          {
+            "title": "Lain",
+            "body": "Conception et prototypage d’une application de mise en relation spécialisée en santé mentale, passée en pré-incubation chez EuraTechnologies à Lille."
+          }
+        ]
+      },
+      {
+        "title": "Backend & APIs",
+        "body": "Node.js (Express, Fastify, NestJS), Go (Gin), Python (FastAPI) et C# (ASP.NET). APIs REST sécurisées OAuth2/JWT, architectures microservices et événementielles.",
+        "tags": [
+          "Go",
+          "NestJS",
+          "FastAPI"
+        ],
+        "summary": "Des APIs et services qui relient les besoins métier à des applications fiables.",
+        "examples": [
+          {
+            "title": "Lainup SAS",
+            "body": "Développement web, intégration d’APIs et exploitation des services : CI/CD, conteneurisation, supervision et alerting."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Refactorisation du service d’initiation de paiement vers une API NestJS adaptée aux microservices et conforme DSP2."
+          }
+        ]
+      },
+      {
+        "title": "IA, agents & automatisation",
+        "body": "Agents conversationnels, chatbots WhatsApp, orchestration LangGraph, suivi LangSmith et pipelines RAG. Automatisation et collecte de données en Python.",
+        "tags": [
+          "LangGraph",
+          "RAG",
+          "Python"
+        ],
+        "summary": "L’IA au service d’usages concrets : conversation, recherche documentaire et automatisation.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "Du message vocal WhatsApp au devis ou à la facture pro forma Factur-X. Pilotage d’une équipe de 3 personnes, de la première maquette au MVP public."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Chatbot WhatsApp, agents conversationnels LangGraph et pipeline RAG sur bases documentaires, déployés sur GCP."
+          }
+        ]
+      },
+      {
+        "title": "Données & architecture",
+        "body": "Modélisation SQL et NoSQL avec PostgreSQL, MariaDB, MongoDB, CosmosDB et TimescaleDB. Intégration de RabbitMQ et de stockage objet.",
+        "tags": [
+          "PostgreSQL",
+          "MongoDB",
+          "RabbitMQ"
+        ],
+        "summary": "Des modèles de données cohérents et une circulation maîtrisée de l’information.",
+        "examples": [
+          {
+            "title": "Pitly",
+            "body": "Carnet d’entretien véhicule en PWA. Cadrage du MVP, architecture microservices, modèle de 15 tables, stockage objet multi-fournisseur, direction artistique et landing page."
+          }
+        ]
+      },
+      {
+        "title": "DevOps, cloud & self-hosting",
+        "body": "Azure, GCP, Docker et Kubernetes. Pipelines GitHub Actions, déploiements blue-green, GitOps avec ArgoCD et supervision Prometheus/Grafana.",
+        "tags": [
+          "Kubernetes",
+          "Docker",
+          "ArgoCD"
+        ],
+        "summary": "Des applications déployées, observées et maintenues, dans le cloud comme en auto-hébergement.",
+        "examples": [
+          {
+            "title": "Infrastructure self-hosted",
+            "body": "Cluster K3s sur VPS ARM64, déploiements GitOps avec ArgoCD, supervision Prometheus/Grafana, sauvegardes automatisées et accès réseau privé."
+          },
+          {
+            "title": "FORTAINE Software",
+            "body": "Product Ownership et suivi d’OKR : +20 % de vélocité d’itération. Infrastructure Azure/GCP et déploiements blue-green : 30 % de régressions en moins."
+          }
+        ]
+      },
+      {
+        "title": "Pilotage & travail d’équipe",
+        "body": "Cadrage, cahiers des charges, chiffrage et planification. Scrum, Product Ownership, suivi d’OKR et revues de code. Leadership, résolution de problèmes et communication claire.",
+        "tags": [
+          "Scrum",
+          "Product Ownership",
+          "OKR"
+        ],
+        "summary": "Du cadrage à la livraison, une vision produit partagée avec l’équipe.",
+        "examples": [
+          {
+            "title": "BoB",
+            "body": "Du message vocal WhatsApp au devis ou à la facture pro forma Factur-X. Pilotage d’une équipe de 3 personnes, de la première maquette au MVP public."
+          },
+          {
+            "title": "Lain",
+            "body": "Conception et prototypage d’une application de mise en relation spécialisée en santé mentale, passée en pré-incubation chez EuraTechnologies à Lille."
+          }
+        ]
+      }
+    ],
+    "formations": [
+      {
+        "title": "Bachelor CDA · Concepteur Développeur d’Applications",
+        "level": "Bac +3",
+        "meta": "CESI Lille"
+      },
+      {
+        "level": "Bac +2",
+        "title": "DI · Développeur Informatique",
+        "meta": "CESI Lille"
+      },
+      {
+        "title": "Licence Informatique",
+        "level": "Bac +3",
+        "meta": "UFR Sciences et Techniques · Rouen"
+      }
+    ],
+    "label": "Compétences et formations",
+    "inPractice": "Dans les projets"
+  },
+  "collaboration": {
+    "text": "Un produit à construire, une intégration IA ou une infrastructure à fiabiliser ? Parlons de vos besoins et de la façon d’avancer ensemble."
+  },
+  "tech": {
+    "title": "TECHNOLOGIES & OUTILS"
+  },
+  "project": {
+    "title": "Un projet en tête ? Parlons-en.",
+    "body": "Développement fullstack, pilotage technique ou intégration IA : échangeons sur votre contexte, vos objectifs et les prochaines étapes."
+  },
+  "footer": {
+    "cta": "Intéressé à travailler ensemble ? Envoyez-moi un message",
+    "copyright": "Copyright © {year}. Louka Altdorf Reynes"
   },
   "services": {
     "title": "Petites missions techniques payantes",
     "intro": "Scripts à périmètre fixe et factures auto-entrepreneur. Devis écrit avant de commencer. Agent de code autonome aussi (GitHub 0n3m0r3).",
-    "invoice": "FactureAE : 9 USDC sur Base pour douze PDF de factures remplis à partir de votre SIRET et de vos lignes. Le CLI est public.",
-    "rib": "frrib : 5 USDC sur Base pour un lot CSV de clés RIB / contrôles IBAN. CLI public (gist 0n3m0r3/2409217e4e8d3699c1eef8c9c6869dd0).",
-    "relance": "frrelance : 6 USDC sur Base pour des PDF de relance de facture (L441-10 / indemnite 40 EUR). CLI public (gist 0n3m0r3/58cf7c966b188f5ba7a30ee2d0dbfa77).",
-    "devis": "frdevis : 7 USDC sur Base pour des PDF de devis (pas une facture ; 293 B + validite). CLI public (gist 0n3m0r3/3684ca9ec09061ad836fb109c1138faa).",
-    "fec": "frfec : 8 USDC sur Base pour un FEC (CGI art. A47 A-1) rempli depuis votre CSV journal, ≤200 lignes. CLI public (gist 0n3m0r3/0b466853c1c82b951ff525b6da849647).",
-    "scripts": "Python testé (CSV/JSON, PDF, petite automatisation) : prix convenu par écrit d'abord.",
+    "invoice": "FactureAE : 9 USDC sur Base pour douze PDF de factures remplis à partir de votre SIRET et de vos lignes. Le CLI est public.",
+    "rib": "frrib : 5 USDC sur Base pour un lot CSV de clés RIB / contrôles IBAN. CLI public (gist 0n3m0r3/2409217e4e8d3699c1eef8c9c6869dd0).",
+    "relance": "frrelance : 6 USDC sur Base pour des PDF de relance de facture (L441-10 / indemnite 40 EUR). CLI public (gist 0n3m0r3/58cf7c966b188f5ba7a30ee2d0dbfa77).",
+    "devis": "frdevis : 7 USDC sur Base pour des PDF de devis (pas une facture ; 293 B + validite). CLI public (gist 0n3m0r3/3684ca9ec09061ad836fb109c1138faa).",
+    "fec": "frfec : 8 USDC sur Base pour un FEC (CGI art. A47 A-1) rempli depuis votre CSV journal, ≤200 lignes. CLI public (gist 0n3m0r3/0b466853c1c82b951ff525b6da849647).",
+    "scripts": "Python testé (CSV/JSON, PDF, petite automatisation) : prix convenu par écrit d'abord.",
     "pay": "USDC sur Base vers 0x89324980acaf83Bc065f1cE7A613BF43f9E5692d",
     "email": "Envoyez le hash de transaction et les JSON à louka.altdorfreynes@gmail.com",
-    "opentask": "Profil OpenTask : onemore_agent",
+    "opentask": "Profil OpenTask : onemore_agent",
     "home": "Retour à l'accueil",
     "cli": "Code source FactureAE"
+  },
+  "projects": {
+    "title": "PROJETS & RÉALISATIONS",
+    "intro": "Des produits conçus de bout en bout, des outils open source et une infrastructure que j’exploite au quotidien.",
+    "items": [
+      {
+        "name": "Pitly",
+        "category": "Produit · Lainup",
+        "body": "Carnet d’entretien véhicule en PWA. Cadrage du MVP, architecture microservices, modèle de 15 tables, stockage objet multi-fournisseur, direction artistique et landing page.",
+        "tags": [
+          "Go / Gin",
+          "PostgreSQL",
+          "RabbitMQ",
+          "PWA"
+        ]
+      },
+      {
+        "name": "BoB",
+        "category": "SaaS & IA · Fortaine",
+        "body": "Du message vocal WhatsApp au devis ou à la facture pro forma Factur-X. Pilotage d’une équipe de 3 personnes, de la première maquette au MVP public.",
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "FastAPI",
+          "Factur-X"
+        ]
+      },
+      {
+        "name": "Lain",
+        "category": "Prototype · Lainup",
+        "body": "Conception et prototypage d’une application de mise en relation spécialisée en santé mentale, passée en pré-incubation chez EuraTechnologies à Lille.",
+        "tags": [
+          "Conception produit",
+          "Matching",
+          "Prototypage"
+        ]
+      },
+      {
+        "name": "Infrastructure self-hosted",
+        "category": "Projet personnel",
+        "body": "Cluster K3s sur VPS ARM64, déploiements GitOps avec ArgoCD, supervision Prometheus/Grafana, sauvegardes automatisées et accès réseau privé.",
+        "tags": [
+          "Kubernetes / K3s",
+          "ArgoCD",
+          "Prometheus",
+          "Grafana"
+        ]
+      },
+      {
+        "name": "VoxFetch-CESI",
+        "category": "Open source · MIT",
+        "body": "Outil de téléchargement de PDF pour ScholarVox, développé en TypeScript et distribué sous licence MIT.",
+        "tags": [
+          "TypeScript",
+          "PDF",
+          "MIT"
+        ]
+      },
+      {
+        "name": "gemini-openrouter-voice",
+        "category": "Open source · MIT",
+        "body": "Extension Chrome qui ajoute l’entrée vocale à Gemini, développée en JavaScript et distribuée sous licence MIT.",
+        "tags": [
+          "JavaScript",
+          "Chrome",
+          "Voix"
+        ]
+      }
+    ],
+    "moreTitle": "Aussi sur le terrain",
+    "more": "Sites vitrines et landing pages Next.js/React déployés sur Cloudflare ; scripts Python de collecte de données et de génération de documents. Au hackathon HELMo × Technifutur à Liège, mon équipe « Coop’log’ » a remporté le prix du projet le plus abouti.",
+    "github": "Voir mon profil GitHub",
+    "fieldSummary": "Des missions concrètes, de l’open source et un hackathon primé.",
+    "discover": "Voir les détails"
+  },
+  "metadata": {
+    "title": "Louka Altdorf Reynes · Chef de projet technique & développeur fullstack",
+    "description": "Chef de projet technique et développeur fullstack à Lille. Produits SaaS, Go, TypeScript, React, intégration IA et infrastructures cloud. Parcours, projets et CV."
+  },
+  "carousel": {
+    "description": "carrousel",
+    "slide": "élément",
+    "instructions": "Utilisez les flèches gauche et droite pour parcourir les éléments.",
+    "position": "{current} sur {total}",
+    "previous": "Élément précédent",
+    "next": "Élément suivant",
+    "go": "Aller à la position {number}",
+    "pause": "Suspendre le défilement automatique",
+    "play": "Reprendre le défilement automatique"
+  },
+  "chat": {
+    "open": "Poser une question à l’assistant IA",
+    "title": "L’assistant IA de Louka",
+    "close": "Fermer la conversation",
+    "notice": "Un assistant pour découvrir le parcours de Louka. Ses réponses peuvent être imparfaites ; confirmez les détails avec lui.",
+    "welcome": "Bonjour ! Je suis l’assistant IA de Louka. Je peux vous présenter son parcours, ses compétences et ses projets. Que souhaitez-vous découvrir ?",
+    "conversation": "Conversation avec l’assistant IA",
+    "you": "Vous",
+    "assistant": "Assistant de Louka",
+    "thinking": "Préparation de la réponse…",
+    "question": "Votre question",
+    "placeholder": "Quels projets a-t-il réalisés ?",
+    "send": "Envoyer",
+    "stop": "Arrêter",
+    "stopped": "Réponse interrompue. Vous pouvez renvoyer votre question.",
+    "error": "L’assistant est indisponible. Réessayez ou contactez Louka par e-mail.",
+    "busy": "L’assistant est occupé. Réessayez dans un instant.",
+    "expired": "La conversation a expiré. Renvoyez votre question pour recommencer.",
+    "privacy": "Conversation conservée dans cet onglet. Évitez les données sensibles.",
+    "reset": "Effacer la conversation"
   }
 }
