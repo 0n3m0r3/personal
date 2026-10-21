@@ -1,0 +1,34 @@
+name: tls-remediation-arm64
+on:
+  push:
+    branches: [codex/php-tls-security]
+    paths: [security/tls-remediation/**, .github/workflows/tls-remediation.yaml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+concurrency:
+  group: tls-remediation-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  image:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and verify native ARM64 image
+        env:
+          BASE_IMAGE: ghcr.io/0n3m0r3/personal@sha256:93558a4816584bae3f6f0470a12aae503b66df86ea3a05984583ccc3dd4e7ae2
+          TARGET: node-runtime
+          IMAGE_NAME: personal
+        run: bash security/tls-remediation/build.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: tls-image-digest
+          path: image-digest.txt
+          if-no-files-found: error
